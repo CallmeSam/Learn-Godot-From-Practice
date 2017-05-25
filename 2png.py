@@ -77,10 +77,8 @@ def main():
 
     file_ext = ["*.jpg", "*.png", "*.bmp",]
 
-    print(hierachy)
-
     if o == "":
-        os.mkdir(i + "_output")
+        os.mkdir(os.path.join(i, "_output"))
 
     if not os.path.exists(o):
         print("Creating folder: ", odir)
