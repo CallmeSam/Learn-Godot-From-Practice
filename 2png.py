@@ -58,15 +58,14 @@ def img_process(imgfile, color, out):
         f = os.path.basename(imgfile)
 
         if color == ():
-            img.save(out + "\\" + f + ".png")
+            img.save(os.path.join(out, f + ".png"))
         else:
             for i in range(img.size[0]):
                 for j in range(img.size[1]):
                     if img.getpixel((i, j)) == color:
                         img.putpixel((i, j), (255, 255, 255, 0))
 
-            img.save(out + "\\" + f + ".png")
-
+            img.save(os.path.join(out, f + ".png"))
 
 def main():
     i, o, c = get_opt(sys.argv[1:])
@@ -95,10 +94,10 @@ def main():
 
     for dir, subdirs, files in hierachy:
         for d in subdirs:
-            odirt = odir + "\\" + d
-            dirt = dir + "\\" + d + "\\"
+            odirt = os.path.join(odir, d)
+            dirt = os.path.join(dir, d)
             # if there are such files
-            files = [glob.glob(dirt + e) for e in file_ext]
+            files = [glob.glob(os.path.join(dirt, e)) for e in file_ext]
             for t in files:
                 if not os.path.exists(odirt):
                     os.mkdir(odirt)
