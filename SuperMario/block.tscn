@@ -7,12 +7,12 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 16, 16 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -25,7 +25,7 @@ texture = ExtResource( 1 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1.62209, 0, 0, 1.58753, -0.0978476, -0.668706 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -36,8 +36,6 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="brickred/StaticBody2D"]
 
-transform/pos = Vector2( -0.0978476, -0.668706 )
-transform/scale = Vector2( 1.62209, 1.58753 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
@@ -51,7 +49,7 @@ texture = ExtResource( 2 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1.61837, 0, 0, 1.59773, 0.0359622, -0.116374 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -62,8 +60,6 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="brick2/StaticBody2D"]
 
-transform/pos = Vector2( 0.0359622, -0.116374 )
-transform/scale = Vector2( 1.61837, 1.59773 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
@@ -75,10 +71,9 @@ texture = ExtResource( 3 )
 
 [node name="StaticBody2D1" type="StaticBody2D" parent="brick1"]
 
-transform/pos = Vector2( 0.39782, 0.097496 )
 input/pickable = false
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1.61637, 0, 0, 1.6128, -0.221961, 0.0795269 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -89,8 +84,6 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="brick1/StaticBody2D1"]
 
-transform/pos = Vector2( -0.221961, 0.0795269 )
-transform/scale = Vector2( 1.61637, 1.6128 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
