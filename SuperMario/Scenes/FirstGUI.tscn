@@ -1,0 +1,66 @@
+[gd_scene format=1]
+
+[node name="Node" type="Node"]
+
+[node name="MarioScore" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 20.0
+margin/right = 78.0
+margin/bottom = 51.0
+text = "MARIO
+000000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Coin" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 250.0
+margin/top = 30.0
+margin/right = 290.0
+margin/bottom = 44.0
+text = "x00"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="World" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 420.0
+margin/top = 30.0
+margin/right = 469.0
+margin/bottom = 44.0
+text = "WORLD"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Time" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 550.0
+margin/top = 30.0
+margin/right = 590.0
+margin/bottom = 44.0
+text = "TIME"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
