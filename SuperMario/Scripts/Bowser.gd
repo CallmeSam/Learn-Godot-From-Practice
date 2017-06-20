@@ -15,9 +15,9 @@ func _process(delta):
 		self.set_pos(Vector2(self.get_pos().x, self.get_item_rect().size.y / 2))
 
 func _input(event):
-	if event.type == InputEvent.MOUSE_BUTTON:
-		if event.button_index == BUTTON_LEFT:
-			self.set_pos(Vector2(event.x, event.y))
+	#if event.type == InputEvent.MOUSE_BUTTON:
+	#	if event.button_index == BUTTON_LEFT:
+	#		self.set_pos(Vector2(event.x, event.y))
 		
 	if event.type == InputEvent.KEY:
 		var pos = self.get_pos();

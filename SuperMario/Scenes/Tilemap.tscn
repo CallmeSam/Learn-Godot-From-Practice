@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Asset/tilesets/exemple.xml" type="TileSet" id=1]
+[ext_resource path="res://Asset/images/tree_1.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="Tilemap" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 65536, 0, 65537, 4, 65538, 4, 65539, 4, 65540, 4, 65541, 4, 65542, 4, 65543, 4, 65544, 0, 131072, 0, 131073, 4, 131074, 4, 131075, 4, 131076, 4, 131077, 4, 131078, 4, 131079, 4, 131080, 0, 196608, 0, 196609, 4, 196610, 4, 196611, 4, 196612, 4, 196613, 4, 196614, 4, 196615, 4, 196616, 0, 262144, 0, 262145, 0, 262146, 0, 262147, 0, 262148, 0, 262149, 0, 262150, 0, 262151, 0, 262152, 0 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+transform/rot = 0.758623
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.145902, 0, 0, 0.145902, 100.937, 46.1697 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+
+[node name="Sprite" type="Sprite" parent="RigidBody2D"]
+
+transform/pos = Vector2( 101.057, 45.9432 )
+transform/scale = Vector2( 0.0972987, 0.0972987 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+
+transform/pos = Vector2( 100.937, 46.1697 )
+transform/scale = Vector2( 0.145902, 0.145902 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+
