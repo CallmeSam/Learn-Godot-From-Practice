@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://Asset/sounds/bowserfall.wav" type="Sample" id=1]
 [ext_resource path="res://Asset/images/bowser0.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Scripts/GuessSwitch.gd" type="Script" id=10]
 [ext_resource path="res://Scripts/PhysicsCollisionButtonSwitch.gd" type="Script" id=11]
 [ext_resource path="res://Scripts/TilemapSwitch.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/AnimatedSwitch.gd" type="Script" id=13]
 
 [sub_resource type="SampleLibrary" id=1]
 
@@ -249,6 +250,24 @@ shortcut = null
 text = "Tilemap"
 flat = false
 script/script = ExtResource( 12 )
+
+[node name="Animated" type="Button" parent="SceneSwitch"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 8 )
+margin/left = 0.0
+margin/top = 62.0
+margin/right = 108.0
+margin/bottom = 89.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Animated"
+flat = false
+script/script = ExtResource( 13 )
 
 [connection signal="button_down" from="SamplePlayer/Button" to="Sprite" method="_on_Button_button_down"]
 

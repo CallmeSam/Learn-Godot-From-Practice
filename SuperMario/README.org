@@ -1,4 +1,17 @@
-* SuperMario
+* SuperMario Working Progress
+** TODO Fireball
+*** DONE animation
+*** TODO script
+**** TODO collision, trajectory
+** TODO CheepBird(Red&Grey)
+*** DONE animation
+*** TODO script
+**** TODO collision, trajectory
+** TODO Up/Down Fire
+*** TODO animation
+*** TODO script
+** TODO Firestick
+** TODO Fire
 ** TODO Mario
 *** TODO Animation
 **** TODO Die

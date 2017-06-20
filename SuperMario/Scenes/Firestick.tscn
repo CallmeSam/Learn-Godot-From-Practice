@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://Asset/images/fireball_0.png" type="Texture" id=1]
+[ext_resource path="res://Asset/images/fireball_1.png" type="Texture" id=2]
+[ext_resource path="res://Asset/images/fireball_2.png" type="Texture" id=3]
+[ext_resource path="res://Asset/images/fireball_3.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="FireStick" type="Node"]
+
+[node name="fireball" type="AnimatedSprite" parent="."]
+
+frames = SubResource( 1 )
+animation = "default"
+frame = 3
+playing = true
+
+[node name="fireball1" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 80, 0 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="fireball2" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 64, 0 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 3
+playing = true
+
+[node name="fireball3" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 48, 0 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="fireball4" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 32, 0 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 2
+playing = true
+
+[node name="fireball5" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 16, 0 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 3
+playing = true
+
+
