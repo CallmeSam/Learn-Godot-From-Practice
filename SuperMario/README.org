@@ -1,24 +1,41 @@
 * SuperMario Working Progress
-** TODO Fireball
-*** DONE animation
-*** TODO script
-**** TODO collision, trajectory
-** TODO CheepBird(Red&Grey)
-*** DONE animation
-*** TODO script
-**** TODO collision, trajectory
-** TODO Up/Down Fire
-*** TODO animation
-*** TODO script
-** TODO Firestick
-** TODO Fire
-** TODO PiranhaFlower Light/Dark
-** TODO Squid
-*** DONE animation
-*** TODO script
-** TODO Star
-*** DONE animation
-*** TODO script, trajectory
+** Fireball
+   - [X] animation
+   - [ ] script
+   - [ ] collision, trajectory
+
+** CheepBird(Red&Grey)
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+
+** Up/Down Fire
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+
+** Star
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+
+** Squid
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+
+** PiranhaFlower Light/Dark
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+** Firestick
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
+** Fire
+    - [X] animation
+    - [ ] script
+    - [ ] collision, trajectory
 ** TODO Mario
 *** TODO Animation
 **** TODO Die
