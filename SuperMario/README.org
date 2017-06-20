@@ -12,6 +12,13 @@
 *** TODO script
 ** TODO Firestick
 ** TODO Fire
+** TODO PiranhaFlower Light/Dark
+** TODO Squid
+*** DONE animation
+*** TODO script
+** TODO Star
+*** DONE animation
+*** TODO script, trajectory
 ** TODO Mario
 *** TODO Animation
 **** TODO Die
