@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=1]
+[gd_scene load_steps=76 format=1]
 
 [ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
 [ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
@@ -7,7 +7,67 @@
 [ext_resource path="res://Asset/images/gnd_4.png" type="Texture" id=5]
 [ext_resource path="res://Asset/images/gnd_5.png" type="Texture" id=6]
 [ext_resource path="res://Asset/images/gnd_red_1.png" type="Texture" id=7]
-[ext_resource path="res://Asset/images/gnd_red2.png" type="Texture" id=8]
+[ext_resource path="res://Asset/images/t_left2.png" type="Texture" id=8]
+[ext_resource path="res://Asset/images/t_center2.png" type="Texture" id=9]
+[ext_resource path="res://Asset/images/t_right2.png" type="Texture" id=10]
+[ext_resource path="res://Asset/images/t_left.png" type="Texture" id=11]
+[ext_resource path="res://Asset/images/t_center.png" type="Texture" id=12]
+[ext_resource path="res://Asset/images/t_right.png" type="Texture" id=13]
+[ext_resource path="res://Asset/images/t_left1.png" type="Texture" id=14]
+[ext_resource path="res://Asset/images/t_center1.png" type="Texture" id=15]
+[ext_resource path="res://Asset/images/t_right1.png" type="Texture" id=16]
+[ext_resource path="res://Asset/images/pipe_hor_bot_center.png" type="Texture" id=17]
+[ext_resource path="res://Asset/images/pipe_hor_bot_left.png" type="Texture" id=18]
+[ext_resource path="res://Asset/images/pipe_hor_bot_right.png" type="Texture" id=19]
+[ext_resource path="res://Asset/images/pipe_hor_top_left.png" type="Texture" id=20]
+[ext_resource path="res://Asset/images/pipe_hor_top_center.png" type="Texture" id=21]
+[ext_resource path="res://Asset/images/pipe_hor_top_right.png" type="Texture" id=22]
+[ext_resource path="res://Asset/images/pipe_left_bot.png" type="Texture" id=23]
+[ext_resource path="res://Asset/images/pipe_right_bot.png" type="Texture" id=24]
+[ext_resource path="res://Asset/images/pipe_left_top.png" type="Texture" id=25]
+[ext_resource path="res://Asset/images/pipe_right_top.png" type="Texture" id=26]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_right.png" type="Texture" id=27]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_center.png" type="Texture" id=28]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_left.png" type="Texture" id=29]
+[ext_resource path="res://Asset/images/pipe3_hor_top_left.png" type="Texture" id=30]
+[ext_resource path="res://Asset/images/pipe3_hor_top_center.png" type="Texture" id=31]
+[ext_resource path="res://Asset/images/pipe3_hor_top_right.png" type="Texture" id=32]
+[ext_resource path="res://Asset/images/pipe3_left_bot.png" type="Texture" id=33]
+[ext_resource path="res://Asset/images/pipe3_right_bot.png" type="Texture" id=34]
+[ext_resource path="res://Asset/images/pipe3_left_top.png" type="Texture" id=35]
+[ext_resource path="res://Asset/images/pipe3_right_top.png" type="Texture" id=36]
+[ext_resource path="res://Asset/images/pipe1_hor_top_right.png" type="Texture" id=37]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_right.png" type="Texture" id=38]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_center.png" type="Texture" id=39]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_left.png" type="Texture" id=40]
+[ext_resource path="res://Asset/images/pipe1_hor_top_left.png" type="Texture" id=41]
+[ext_resource path="res://Asset/images/pipe1_hor_top_center.png" type="Texture" id=42]
+[ext_resource path="res://Asset/images/pipe1_left_bot.png" type="Texture" id=43]
+[ext_resource path="res://Asset/images/pipe1_right_bot.png" type="Texture" id=44]
+[ext_resource path="res://Asset/images/pipe1_left_top.png" type="Texture" id=45]
+[ext_resource path="res://Asset/images/pipe1_right_top.png" type="Texture" id=46]
+[ext_resource path="res://Asset/images/pipe2_hor_top_right.png" type="Texture" id=47]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_right.png" type="Texture" id=48]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_center.png" type="Texture" id=49]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_left.png" type="Texture" id=50]
+[ext_resource path="res://Asset/images/pipe2_hor_top_left.png" type="Texture" id=51]
+[ext_resource path="res://Asset/images/pipe2_hor_top_center.png" type="Texture" id=52]
+[ext_resource path="res://Asset/images/pipe2_left_bot.png" type="Texture" id=53]
+[ext_resource path="res://Asset/images/pipe2_right_bot.png" type="Texture" id=54]
+[ext_resource path="res://Asset/images/pipe2_left_top.png" type="Texture" id=55]
+[ext_resource path="res://Asset/images/pipe2_right_top.png" type="Texture" id=56]
+[ext_resource path="res://Asset/images/pipe4_left_bot.png" type="Texture" id=57]
+[ext_resource path="res://Asset/images/pipe4_right_bot.png" type="Texture" id=58]
+[ext_resource path="res://Asset/images/pipe4_left_top.png" type="Texture" id=59]
+[ext_resource path="res://Asset/images/pipe4_right_top.png" type="Texture" id=60]
+[ext_resource path="res://Asset/images/pipe5_left_bot.png" type="Texture" id=61]
+[ext_resource path="res://Asset/images/pipe5_right_bot.png" type="Texture" id=62]
+[ext_resource path="res://Asset/images/pipe5_right_top.png" type="Texture" id=63]
+[ext_resource path="res://Asset/images/pipe5_left_top.png" type="Texture" id=64]
+[ext_resource path="res://Asset/images/pipe6_left_bot.png" type="Texture" id=65]
+[ext_resource path="res://Asset/images/pipe6_right_bot.png" type="Texture" id=66]
+[ext_resource path="res://Asset/images/pipe6_left_top.png" type="Texture" id=67]
+[ext_resource path="res://Asset/images/pipe6_right_top.png" type="Texture" id=68]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -44,20 +104,11 @@ extents = Vector2( 16, 16 )
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
-[sub_resource type="RectangleShape2D" id=8]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=9]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 48 )
-
 [node name="Tilemap" type="Node"]
 
 [node name="GroundBlue1" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 16, 16 )
 texture = ExtResource( 1 )
 
@@ -82,6 +133,7 @@ _update_shape_index = 0
 
 [node name="GroundBlue2" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 48, 16 )
 texture = ExtResource( 2 )
 
@@ -106,6 +158,7 @@ _update_shape_index = 0
 
 [node name="GroundGrey1" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 80, 16 )
 texture = ExtResource( 3 )
 
@@ -130,6 +183,7 @@ _update_shape_index = 0
 
 [node name="GroundGrey2" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 112, 16 )
 texture = ExtResource( 4 )
 
@@ -154,6 +208,7 @@ _update_shape_index = 0
 
 [node name="GroundGrey3" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 144, 16 )
 texture = ExtResource( 5 )
 
@@ -178,6 +233,7 @@ _update_shape_index = 0
 
 [node name="GroundGreenBlue" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 176, 16 )
 texture = ExtResource( 6 )
 
@@ -202,6 +258,7 @@ _update_shape_index = 0
 
 [node name="GroundRed1" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 208, 16 )
 texture = ExtResource( 7 )
 
@@ -224,15 +281,16 @@ shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="GroundRed2" type="Sprite" parent="."]
+[node name="TformWL" type="Sprite" parent="."]
 
-transform/pos = Vector2( 240, 16 )
+editor/display_folded = true
+transform/pos = Vector2( 16, 64 )
 texture = ExtResource( 8 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="TformWL"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -242,22 +300,23 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformWL/StaticBody2D"]
 
-shape = SubResource( 8 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="GroundRed2-3" type="Node2D" parent="."]
+[node name="TformWC" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 240, 80 )
+transform/pos = Vector2( 48, 64 )
+texture = ExtResource( 9 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed2-3"]
+[node name="StaticBody2D" type="StaticBody2D" parent="TformWC"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -266,110 +325,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed2-3/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformWC/StaticBody2D"]
 
-transform/pos = Vector2( 0, 32 )
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="Sprite10" type="Sprite" parent="GroundRed2-3"]
-
-texture = ExtResource( 8 )
-
-[node name="Sprite11" type="Sprite" parent="GroundRed2-3"]
-
-transform/pos = Vector2( 0, 32 )
-texture = ExtResource( 8 )
-
-[node name="Sprite12" type="Sprite" parent="GroundRed2-3"]
-
-transform/pos = Vector2( 0, 64 )
-texture = ExtResource( 8 )
-
-[node name="GroundBlue2-3" type="Node2D" parent="."]
-
-transform/pos = Vector2( 48, 80 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue2-3"]
-
-input/pickable = false
-shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundBlue2-3/StaticBody2D"]
-
-transform/pos = Vector2( 0, 32 )
-shape = SubResource( 9 )
-trigger = false
-_update_shape_index = 0
-
-[node name="Sprite10" type="Sprite" parent="GroundBlue2-3"]
-
-texture = ExtResource( 2 )
-
-[node name="Sprite11" type="Sprite" parent="GroundBlue2-3"]
-
-transform/pos = Vector2( 0, 32 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="GroundBlue2-3"]
-
-transform/pos = Vector2( 0, 64 )
-texture = ExtResource( 2 )
-
-[node name="GroundGrey2-3" type="Node2D" parent="."]
-
-transform/pos = Vector2( 112, 80 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey2-3"]
-
-input/pickable = false
-shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey2-3/StaticBody2D"]
-
-transform/pos = Vector2( 0, 32 )
-shape = SubResource( 9 )
-trigger = false
-_update_shape_index = 0
-
-[node name="Sprite10" type="Sprite" parent="GroundGrey2-3"]
-
-texture = ExtResource( 4 )
-
-[node name="Sprite13" type="Sprite" parent="GroundGrey2-3"]
-
-transform/pos = Vector2( 0, 32 )
-texture = ExtResource( 4 )
-
-[node name="Sprite14" type="Sprite" parent="GroundGrey2-3"]
-
-transform/pos = Vector2( 0, 64 )
-texture = ExtResource( 4 )
-
-[node name="copy" type="Sprite" parent="."]
+[node name="TformWR" type="Sprite" parent="."]
 
 editor/display_folded = true
+transform/pos = Vector2( 80, 64 )
+texture = ExtResource( 10 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy"]
+[node name="StaticBody2D" type="StaticBody2D" parent="TformWR"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -377,16 +350,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformWR/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy1" type="Sprite" parent="."]
+[node name="TformGL" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy1"]
+editor/display_folded = true
+transform/pos = Vector2( 128, 64 )
+texture = ExtResource( 11 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformGL"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -394,16 +375,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy1/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformGL/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy2" type="Sprite" parent="."]
+[node name="TformGC" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy2"]
+editor/display_folded = true
+transform/pos = Vector2( 160, 64 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformGC"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -411,16 +400,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformGC/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy3" type="Sprite" parent="."]
+[node name="TformGR" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy3"]
+editor/display_folded = true
+transform/pos = Vector2( 192, 64 )
+texture = ExtResource( 13 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformGR"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -428,16 +425,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy3/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformGR/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy4" type="Sprite" parent="."]
+[node name="TformYL" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy4"]
+editor/display_folded = true
+transform/pos = Vector2( 240, 64 )
+texture = ExtResource( 14 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformYL"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -445,16 +450,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy4/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformYL/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy5" type="Sprite" parent="."]
+[node name="TformYC" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy5"]
+editor/display_folded = true
+transform/pos = Vector2( 272, 64 )
+texture = ExtResource( 15 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformYC"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -462,16 +475,24 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy5/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformYC/StaticBody2D"]
 
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
-[node name="copy6" type="Sprite" parent="."]
+[node name="TformYR" type="Sprite" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="copy6"]
+editor/display_folded = true
+transform/pos = Vector2( 304, 64 )
+texture = ExtResource( 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TformYR"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -479,8 +500,1309 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="copy6/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TformYR/StaticBody2D"]
 
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-BC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 144 )
+texture = ExtResource( 17 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 144 )
+texture = ExtResource( 18 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 144 )
+texture = ExtResource( 19 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 112 )
+texture = ExtResource( 20 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-TC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 112 )
+texture = ExtResource( 21 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 112 )
+texture = ExtResource( 22 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 144 )
+texture = ExtResource( 23 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 144 )
+texture = ExtResource( 24 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 112 )
+texture = ExtResource( 25 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 112 )
+texture = ExtResource( 26 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 224 )
+texture = ExtResource( 27 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-BC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 224 )
+texture = ExtResource( 28 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 224 )
+texture = ExtResource( 29 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 192 )
+texture = ExtResource( 30 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-TC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 192 )
+texture = ExtResource( 31 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCDW-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 192 )
+texture = ExtResource( 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDW-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 224 )
+texture = ExtResource( 33 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDW-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 224 )
+texture = ExtResource( 34 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDW-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 192 )
+texture = ExtResource( 35 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeDW-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 192 )
+texture = ExtResource( 36 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 272 )
+texture = ExtResource( 37 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 304 )
+texture = ExtResource( 38 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-BC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 304 )
+texture = ExtResource( 39 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 304 )
+texture = ExtResource( 40 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 272 )
+texture = ExtResource( 41 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLG-TC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 272 )
+texture = ExtResource( 42 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 304 )
+texture = ExtResource( 43 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 304 )
+texture = ExtResource( 44 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 272 )
+texture = ExtResource( 45 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 272 )
+texture = ExtResource( 46 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 352 )
+texture = ExtResource( 47 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 80, 384 )
+texture = ExtResource( 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-BC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 384 )
+texture = ExtResource( 49 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 384 )
+texture = ExtResource( 50 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 16, 352 )
+texture = ExtResource( 51 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCLWG-TC" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 48, 352 )
+texture = ExtResource( 52 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TC"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TC/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLWG-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 384 )
+texture = ExtResource( 53 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLWG-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 384 )
+texture = ExtResource( 54 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLWG-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 352 )
+texture = ExtResource( 55 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLWG-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 352 )
+texture = ExtResource( 56 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeR-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 384 )
+texture = ExtResource( 57 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeR-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 384 )
+texture = ExtResource( 58 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeR-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 352 )
+texture = ExtResource( 59 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeR-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 352 )
+texture = ExtResource( 60 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCy-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 304 )
+texture = ExtResource( 61 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCy-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 304 )
+texture = ExtResource( 62 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCy-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 272 )
+texture = ExtResource( 63 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeCy-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 272 )
+texture = ExtResource( 64 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLW-BL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 224 )
+texture = ExtResource( 65 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-BL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLW-BR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 224 )
+texture = ExtResource( 66 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-BR/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLW-TL" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 208, 192 )
+texture = ExtResource( 67 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TL"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-TL/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="PipeLW-TR" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 192 )
+texture = ExtResource( 68 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TR"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-TR/StaticBody2D"]
+
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 

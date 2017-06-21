@@ -271,9 +271,9 @@ script/script = ExtResource( 13 )
 
 [connection signal="button_down" from="SamplePlayer/Button" to="Sprite" method="_on_Button_button_down"]
 
-[connection signal="timeout" from="HelloWorldLabel/Timer" to="HelloWorldLabel" method="_on_Timer_timeout"]
-
 [connection signal="timeout" from="HelloWorldLabel/Timer" to="Sprite" method="_on_Timer_timeout"]
+
+[connection signal="timeout" from="HelloWorldLabel/Timer" to="HelloWorldLabel" method="_on_Timer_timeout"]
 
 [connection signal="pressed" from="VBoxContainer/NewGame" to="VBoxContainer" method="_on_NewGame_pressed"]
 
