@@ -84,10 +84,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 90.0
-margin/top = 120.0
-margin/right = 602.0
-margin/bottom = 450.0
+margin/left = 157.0
+margin/top = 105.0
+margin/right = 669.0
+margin/bottom = 435.0
 texture = ExtResource( 3 )
 stretch_mode = 0
 
@@ -100,7 +100,7 @@ texture = ExtResource( 4 )
 [node name="CoinNum" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 271.96, 38.7312 )
-frame = 2
+frame = 3
 
 [node name="Timer" type="Timer" parent="."]
 

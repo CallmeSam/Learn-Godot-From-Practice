@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Asset/images/Mario/mario.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Test.gd" type="Script" id=2]
+[ext_resource path="res://Asset/fonts/prstartk16.fnt" type="BitmapFont" id=3]
+
+[node name="Sprite" type="Sprite"]
+
+transform/pos = Vector2( 358.608, 231.16 )
+texture = ExtResource( 1 )
+script/script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 46.0
+margin/top = -5.0
+margin/right = 86.0
+margin/bottom = 9.0
+custom_fonts/font = ExtResource( 3 )
+text = "x 3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label 2" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -29.0
+margin/top = -55.0
+margin/right = 115.0
+margin/bottom = -20.0
+custom_fonts/font = ExtResource( 3 )
+text = "World 1-1"
+align = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
