@@ -42,7 +42,7 @@
      - [ ] script
    - [ ] Platform6
      - [ ] script
-** TODO TileSet
+** DONE TileSet
    - [X] Pipes
      - [X] Corner Pipe White Dark
      - [X] Corner Pipe Green Dark
@@ -59,7 +59,6 @@
      - [X] White Tree
      - [X] Green Tree
      - [X] Trunk
-   - [X] Plant Under Water
    - [X] T Platform
      - [X] Platform White
      - [X] Platform Green
@@ -67,6 +66,25 @@
      - [X] Support Grey
      - [X] Support Pink
      - [X] Support Brun
+   - [X] Lava
+   - [X] Water
+   - [X] Vine
+   - [X] Grounds
+   - [X] Fence
+   - [X] Castle&Rempart
+   - [X] Cloud
+   - [X] Peach
+   - [X] Castle Flag
+   - [X] Flag
+   - [X] Flag Pole
+   - [X] Bush
+   - [X] Grass
+   - [X] Cannon
+   - [X] Peach
+   - [X] Toad
+   - [X] Aquatique
+   - [X] Seasaw
+
 ** TODO Mario
 *** TODO Animation
 **** TODO Die

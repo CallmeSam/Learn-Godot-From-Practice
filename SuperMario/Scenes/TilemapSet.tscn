@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=1]
+[gd_scene load_steps=165 format=1]
 
 [ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
 [ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
@@ -80,6 +80,74 @@
 [ext_resource path="res://Asset/images/tree1_2.png" type="Texture" id=78]
 [ext_resource path="res://Asset/images/tree_0.png" type="Texture" id=79]
 [ext_resource path="res://Asset/images/uw_1.png" type="Texture" id=80]
+[ext_resource path="res://Asset/images/lava_1.png" type="Texture" id=81]
+[ext_resource path="res://Asset/images/lava_0.png" type="Texture" id=82]
+[ext_resource path="res://Asset/images/water_1.png" type="Texture" id=83]
+[ext_resource path="res://Asset/images/water_0.png" type="Texture" id=84]
+[ext_resource path="res://Asset/images/water_2.png" type="Texture" id=85]
+[ext_resource path="res://Asset/images/water_3.png" type="Texture" id=86]
+[ext_resource path="res://Asset/images/bonus.png" type="Texture" id=87]
+[ext_resource path="res://Asset/images/fence.png" type="Texture" id=88]
+[ext_resource path="res://Asset/images/castle0_brick.png" type="Texture" id=89]
+[ext_resource path="res://Asset/images/castle0_center_center.png" type="Texture" id=90]
+[ext_resource path="res://Asset/images/castle0_center_center_top.png" type="Texture" id=91]
+[ext_resource path="res://Asset/images/castle0_center_left.png" type="Texture" id=92]
+[ext_resource path="res://Asset/images/castle0_center_right.png" type="Texture" id=93]
+[ext_resource path="res://Asset/images/castle0_top0.png" type="Texture" id=94]
+[ext_resource path="res://Asset/images/castle0_top1.png" type="Texture" id=95]
+[ext_resource path="res://Asset/images/castle1_brick.png" type="Texture" id=96]
+[ext_resource path="res://Asset/images/castle1_center_center.png" type="Texture" id=97]
+[ext_resource path="res://Asset/images/castle1_center_center_top.png" type="Texture" id=98]
+[ext_resource path="res://Asset/images/castle1_center_left.png" type="Texture" id=99]
+[ext_resource path="res://Asset/images/castle1_center_right.png" type="Texture" id=100]
+[ext_resource path="res://Asset/images/castle1_top1.png" type="Texture" id=101]
+[ext_resource path="res://Asset/images/castle1_top0.png" type="Texture" id=102]
+[ext_resource path="res://Asset/images/cloud_center_bot.png" type="Texture" id=103]
+[ext_resource path="res://Asset/images/cloud_center_top.png" type="Texture" id=104]
+[ext_resource path="res://Asset/images/cloud_left_bot.png" type="Texture" id=105]
+[ext_resource path="res://Asset/images/cloud_left_top.png" type="Texture" id=106]
+[ext_resource path="res://Asset/images/cloud_right_top.png" type="Texture" id=107]
+[ext_resource path="res://Asset/images/cloud_right_bot.png" type="Texture" id=108]
+[ext_resource path="res://Asset/images/cloud_center_bot1.png" type="Texture" id=109]
+[ext_resource path="res://Asset/images/cloud_center_top1.png" type="Texture" id=110]
+[ext_resource path="res://Asset/images/cloud_left_bot1.png" type="Texture" id=111]
+[ext_resource path="res://Asset/images/vine.png" type="Texture" id=112]
+[ext_resource path="res://Asset/images/vine_top.png" type="Texture" id=113]
+[ext_resource path="res://Asset/images/vine1.png" type="Texture" id=114]
+[ext_resource path="res://Asset/images/vine1_top.png" type="Texture" id=115]
+[ext_resource path="res://Asset/images/peach.png" type="Texture" id=116]
+[ext_resource path="res://Asset/images/castle_flag.png" type="Texture" id=117]
+[ext_resource path="res://Asset/images/bush_top.png" type="Texture" id=118]
+[ext_resource path="res://Asset/images/bush_center_1.png" type="Texture" id=119]
+[ext_resource path="res://Asset/images/bush_center_0.png" type="Texture" id=120]
+[ext_resource path="res://Asset/images/bush_left.png" type="Texture" id=121]
+[ext_resource path="res://Asset/images/bush_right.png" type="Texture" id=122]
+[ext_resource path="res://Asset/images/grass_center.png" type="Texture" id=123]
+[ext_resource path="res://Asset/images/grass_left.png" type="Texture" id=124]
+[ext_resource path="res://Asset/images/grass_right.png" type="Texture" id=125]
+[ext_resource path="res://Asset/images/end0_dot.png" type="Texture" id=126]
+[ext_resource path="res://Asset/images/end1_dot.png" type="Texture" id=127]
+[ext_resource path="res://Asset/images/end0_l.png" type="Texture" id=128]
+[ext_resource path="res://Asset/images/end1_l.png" type="Texture" id=129]
+[ext_resource path="res://Asset/images/end0_flag.png" type="Texture" id=130]
+[ext_resource path="res://Asset/images/end1_flag.png" type="Texture" id=131]
+[ext_resource path="res://Asset/images/bridge3.png" type="Texture" id=132]
+[ext_resource path="res://Asset/images/bridge4.png" type="Texture" id=133]
+[ext_resource path="res://Asset/images/bridge2.png" type="Texture" id=134]
+[ext_resource path="res://Asset/images/bridge_0.png" type="Texture" id=135]
+[ext_resource path="res://Asset/images/bridge_1.png" type="Texture" id=136]
+[ext_resource path="res://Asset/images/toad.png" type="Texture" id=137]
+[ext_resource path="res://Asset/images/seesaw1_0.png" type="Texture" id=138]
+[ext_resource path="res://Asset/images/seesaw1_1.png" type="Texture" id=139]
+[ext_resource path="res://Asset/images/seesaw_0.png" type="Texture" id=140]
+[ext_resource path="res://Asset/images/seesaw_1.png" type="Texture" id=141]
+[ext_resource path="res://Asset/images/seesaw1_2.png" type="Texture" id=142]
+[ext_resource path="res://Asset/images/seesaw1_3.png" type="Texture" id=143]
+[ext_resource path="res://Asset/images/seesaw_3.png" type="Texture" id=144]
+[ext_resource path="res://Asset/images/seesaw_2.png" type="Texture" id=145]
+[ext_resource path="res://Asset/images/b_top1.png" type="Texture" id=146]
+[ext_resource path="res://Asset/images/b_top.png" type="Texture" id=147]
+[ext_resource path="res://Asset/images/b_bot.png" type="Texture" id=148]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -112,6 +180,51 @@ custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2, 16 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2, 16 )
+
+[sub_resource type="RectangleShape2D" id=13]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 8 )
+
+[sub_resource type="RectangleShape2D" id=14]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=15]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=16]
 
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
@@ -1897,5 +2010,543 @@ texture = ExtResource( 79 )
 
 transform/pos = Vector2( 288, 272 )
 texture = ExtResource( 80 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PlantUnderWater"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlantUnderWater/StaticBody2D"]
+
+shape = SubResource( 8 )
+trigger = false
+_update_shape_index = 0
+
+[node name="LavaU" type="Sprite" parent="."]
+
+transform/pos = Vector2( 384, 272 )
+texture = ExtResource( 81 )
+
+[node name="Lava" type="Sprite" parent="."]
+
+transform/pos = Vector2( 336, 272 )
+texture = ExtResource( 82 )
+
+[node name="WaterBU" type="Sprite" parent="."]
+
+transform/pos = Vector2( 480, 272 )
+texture = ExtResource( 83 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="WaterBU"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 10 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WaterBU/StaticBody2D"]
+
+shape = SubResource( 10 )
+trigger = false
+_update_shape_index = 0
+
+[node name="WaterB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 432, 272 )
+texture = ExtResource( 84 )
+
+[node name="WaterU" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 272 )
+texture = ExtResource( 85 )
+
+[node name="Water" type="Sprite" parent="."]
+
+transform/pos = Vector2( 576, 272 )
+texture = ExtResource( 86 )
+
+[node name="WhiteBonus" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 720, 272 )
+texture = ExtResource( 87 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="WhiteBonus"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WhiteBonus/StaticBody2D"]
+
+shape = SubResource( 9 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Fence" type="Sprite" parent="."]
+
+transform/pos = Vector2( 288, 320 )
+texture = ExtResource( 88 )
+
+[node name="CBrickR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 288, 368 )
+texture = ExtResource( 89 )
+
+[node name="CDoorCR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 368 )
+texture = ExtResource( 90 )
+
+[node name="CDoorUR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 352, 368 )
+texture = ExtResource( 91 )
+
+[node name="CDoorLR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 384, 368 )
+texture = ExtResource( 92 )
+
+[node name="CDoorRR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 416, 368 )
+texture = ExtResource( 93 )
+
+[node name="CRempartR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 448, 368 )
+texture = ExtResource( 94 )
+
+[node name="CRempart2R" type="Sprite" parent="."]
+
+transform/pos = Vector2( 480, 368 )
+texture = ExtResource( 95 )
+
+[node name="CBrickRGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 336, 320 )
+texture = ExtResource( 96 )
+
+[node name="CDoorCRGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 368, 320 )
+texture = ExtResource( 97 )
+
+[node name="CDoorURGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400, 320 )
+texture = ExtResource( 98 )
+
+[node name="CDoorLRGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 432, 320 )
+texture = ExtResource( 99 )
+
+[node name="CDoorRRGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 464, 320 )
+texture = ExtResource( 100 )
+
+[node name="CRempart2RGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 320 )
+texture = ExtResource( 101 )
+
+[node name="CRempartRGrey" type="Sprite" parent="."]
+
+transform/pos = Vector2( 496, 320 )
+texture = ExtResource( 102 )
+
+[node name="CloudBCB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672, 192 )
+texture = ExtResource( 103 )
+
+[node name="CloudBCT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672, 160 )
+texture = ExtResource( 104 )
+
+[node name="CloudBLB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 640, 192 )
+texture = ExtResource( 105 )
+
+[node name="CloudLT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 640, 160 )
+texture = ExtResource( 106 )
+
+[node name="CloudRT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 704, 160 )
+texture = ExtResource( 107 )
+
+[node name="CloudRB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 704, 192 )
+texture = ExtResource( 108 )
+
+[node name="CloudRCB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672, 240 )
+texture = ExtResource( 109 )
+
+[node name="CloudRCT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672, 208 )
+texture = ExtResource( 110 )
+
+[node name="CloudRLB" type="Sprite" parent="."]
+
+transform/pos = Vector2( 640, 240 )
+texture = ExtResource( 111 )
+
+[node name="VineL" type="Sprite" parent="."]
+
+transform/pos = Vector2( 576, 368 )
+texture = ExtResource( 112 )
+
+[node name="VineLT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 576, 336 )
+texture = ExtResource( 113 )
+
+[node name="VineD" type="Sprite" parent="."]
+
+transform/pos = Vector2( 624, 368 )
+texture = ExtResource( 114 )
+
+[node name="VineDT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 624, 336 )
+texture = ExtResource( 115 )
+
+[node name="Peach" type="Sprite" parent="."]
+
+transform/pos = Vector2( 448, 208 )
+texture = ExtResource( 116 )
+
+[node name="CastleFlag" type="Sprite" parent="."]
+
+transform/pos = Vector2( 480, 208 )
+texture = ExtResource( 117 )
+
+[node name="BushTop" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 112 )
+texture = ExtResource( 118 )
+
+[node name="BushCenter" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 144 )
+texture = ExtResource( 119 )
+
+[node name="BushCenter1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 304, 144 )
+texture = ExtResource( 120 )
+
+[node name="BushLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 208, 144 )
+texture = ExtResource( 121 )
+
+[node name="BushRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272, 144 )
+texture = ExtResource( 122 )
+
+[node name="GrassCenter" type="Sprite" parent="."]
+
+transform/pos = Vector2( 368, 144 )
+texture = ExtResource( 123 )
+
+[node name="GrassLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 336, 144 )
+texture = ExtResource( 124 )
+
+[node name="GrassRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400, 144 )
+texture = ExtResource( 125 )
+
+[node name="FlagPoleTop1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 416, 144 )
+texture = ExtResource( 126 )
+
+[node name="FlagPoleTop2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 512, 144 )
+texture = ExtResource( 127 )
+
+[node name="FlagPole1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 448, 144 )
+texture = ExtResource( 128 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FlagPole1"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 12 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlagPole1/StaticBody2D"]
+
+shape = SubResource( 12 )
+trigger = false
+_update_shape_index = 0
+
+[node name="FlagPole2" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 480, 144 )
+texture = ExtResource( 129 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FlagPole2"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 11 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlagPole2/StaticBody2D"]
+
+shape = SubResource( 11 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Flag1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 544, 144 )
+texture = ExtResource( 130 )
+
+[node name="Flag2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 592, 144 )
+texture = ExtResource( 131 )
+
+[node name="BridgeG" type="Sprite" parent="."]
+
+transform/pos = Vector2( 512, 208 )
+texture = ExtResource( 132 )
+
+[node name="BridgeW" type="Sprite" parent="."]
+
+transform/pos = Vector2( 544, 208 )
+texture = ExtResource( 133 )
+
+[node name="Bridge" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 576, 208 )
+texture = ExtResource( 134 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Bridge"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 13 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, -8 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge/StaticBody2D"]
+
+transform/pos = Vector2( 0, -8 )
+shape = SubResource( 13 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Bridge1" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 608, 208 )
+texture = ExtResource( 135 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Bridge1"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 14 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge1/StaticBody2D"]
+
+shape = SubResource( 14 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Bridge2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 624, 256 )
+texture = ExtResource( 136 )
+
+[node name="Toad" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672, 288 )
+texture = ExtResource( 137 )
+
+[node name="SeasawWL" type="Sprite" parent="."]
+
+transform/pos = Vector2( 464, 64 )
+texture = ExtResource( 138 )
+
+[node name="SeasawWR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 512, 64 )
+texture = ExtResource( 139 )
+
+[node name="SeasawL" type="Sprite" parent="."]
+
+transform/pos = Vector2( 544, 64 )
+texture = ExtResource( 140 )
+
+[node name="SeasawR" type="Sprite" parent="."]
+
+transform/pos = Vector2( 592, 64 )
+texture = ExtResource( 141 )
+
+[node name="SeasawWH" type="Sprite" parent="."]
+
+transform/pos = Vector2( 464, 32 )
+texture = ExtResource( 142 )
+
+[node name="SeasawWV" type="Sprite" parent="."]
+
+transform/pos = Vector2( 432, 32 )
+texture = ExtResource( 143 )
+
+[node name="SeasawV" type="Sprite" parent="."]
+
+transform/pos = Vector2( 496, 32 )
+texture = ExtResource( 144 )
+
+[node name="SeasawH" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 32 )
+texture = ExtResource( 145 )
+
+[node name="CannonB" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 624, 64 )
+texture = ExtResource( 146 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CannonB"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CannonB/StaticBody2D"]
+
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CannonT" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 624, 32 )
+texture = ExtResource( 147 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CannonT"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CannonT/StaticBody2D"]
+
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CannonT1" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 624, 96 )
+texture = ExtResource( 148 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CannonT1"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CannonT1/StaticBody2D"]
+
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 0
 
 
