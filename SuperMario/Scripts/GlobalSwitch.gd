@@ -9,7 +9,6 @@ func _ready():
 	Globals.set("MAX_POWER_LEVEL", 9000)
 	
 func setScene(scene):
-	print("I'm here")
 	currentScene.queue_free()
 	var s = ResourceLoader.load(scene)
 	currentScene = s.instance()

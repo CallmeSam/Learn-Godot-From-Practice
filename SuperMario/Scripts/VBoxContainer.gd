@@ -27,3 +27,4 @@ func _on_Settings_pressed():
 
 func _on_Guess_pressed():
 	print("Guess button pressed!!!")
+	get_node("/root/GlobalSwitch").setScene("res://Scenes/MarioHUD.tscn")

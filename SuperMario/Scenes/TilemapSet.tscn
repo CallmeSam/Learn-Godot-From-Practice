@@ -1,90 +1,67 @@
-[gd_scene load_steps=13 format=1]
+[gd_scene load_steps=17 format=1]
 
-[ext_resource path="res://Asset/images/tmp/PathAndObjects.png" type="Texture" id=1]
+[ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
+[ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
+[ext_resource path="res://Asset/images/gnd2.png" type="Texture" id=3]
+[ext_resource path="res://Asset/images/gnd2_2.png" type="Texture" id=4]
+[ext_resource path="res://Asset/images/gnd_4.png" type="Texture" id=5]
+[ext_resource path="res://Asset/images/gnd_5.png" type="Texture" id=6]
+[ext_resource path="res://Asset/images/gnd_red_1.png" type="Texture" id=7]
+[ext_resource path="res://Asset/images/gnd_red2.png" type="Texture" id=8]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 24.5164, 32.0748, -0.0454311, 31.9803, 0.143505, 0.144438, 22.627, 29.3352 )
-
-[sub_resource type="ConvexPolygonShape2D" id=2]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 0.143505, 0.144438, 31.9794, 0.144438, 31.9794, 21.8722, 26.2168, 23.4782 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.143505, 0.144438, 26.2168, 23.4782, 23.0994, 25.7454 )
+extents = Vector2( 16, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 22.627, 29.3352, 24.7998, 31.508, 24.5164, 32.0748 )
-
-[sub_resource type="ConvexPolygonShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 22.627, 29.3352, 0.143505, 0.144438, 23.0994, 25.7454 )
+extents = Vector2( 16, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, 0, -31.925, -16.9386, -23.1324, -6.26183 )
-
-[sub_resource type="ConvexPolygonShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.105301, -21.7536, 0, -32, 32, -32, 32, 0 )
+extents = Vector2( 16, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 0, 32, -3.45363, -11.2862, 0.105301, -21.7536, 32, 0, 32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -11.4089, -2.91225, -3.45363, -11.2862, 0, 32, -32, 32 )
+extents = Vector2( 16, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -11.4089, -2.91225, -32, 32, -32, 0, -23.1324, -6.26183 )
-
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 32, 32, 12.5792, 31.9748, 13.6184, 28.0071, 15.1674, 22.6064, 31.9453, 5.42914 )
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
 
 [node name="Tilemap" type="Node"]
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="GroundBlue1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 16, 16 )
 texture = ExtResource( 1 )
-region = true
-region_rect = Rect2( 0, 0, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue1"]
 
-transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
-shapes/1/trigger = false
-shapes/2/shape = SubResource( 3 )
-shapes/2/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
-shapes/2/trigger = false
-shapes/3/shape = SubResource( 4 )
-shapes/3/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
-shapes/3/trigger = false
-shapes/4/shape = SubResource( 5 )
-shapes/4/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
-shapes/4/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -92,41 +69,119 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundBlue1/StaticBody2D"]
 
-transform/pos = Vector2( -32, -32 )
-transform/scale = Vector2( 2, 2 )
-build_mode = 0
-polygon = Vector2Array( 0.143505, 0.144438, 31.9794, 0.144438, 31.9794, 21.8722, 26.2168, 23.4782, 23.0994, 25.7454, 22.627, 29.3352, 24.7998, 31.508, 24.5164, 32.0748, -0.0454311, 31.9803 )
-shape_range = Vector2( 0, 4 )
+shape = SubResource( 1 )
 trigger = false
+_update_shape_index = 0
 
-[node name="Sprite1" type="Sprite" parent="."]
+[node name="GroundBlue2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 48, 16 )
-texture = ExtResource( 1 )
-region = true
-region_rect = Rect2( 64, 64, 32, 32 )
+texture = ExtResource( 2 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite1"]
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue2"]
 
-transform/scale = Vector2( 0.5, 0.5 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundBlue2/StaticBody2D"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="GroundGrey1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 80, 16 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey1"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey1/StaticBody2D"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="GroundGrey2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 16 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey2"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey2/StaticBody2D"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="GroundGrey3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 144, 16 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey3"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey3/StaticBody2D"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="GroundGreenBlue" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 16 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundGreenBlue"]
+
 input/pickable = false
 shapes/0/shape = SubResource( 6 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/1/trigger = false
-shapes/2/shape = SubResource( 8 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/2/trigger = false
-shapes/3/shape = SubResource( 9 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/3/trigger = false
-shapes/4/shape = SubResource( 10 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/4/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -134,26 +189,22 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite1/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGreenBlue/StaticBody2D"]
 
-build_mode = 0
-polygon = Vector2Array( 0, -32, 32, -32, 32, 0, 32, 32, 0, 32, -32, 32, -32, 0, -31.925, -16.9386, -23.1324, -6.26183, -11.4089, -2.91225, -3.45363, -11.2862, 0.105301, -21.7536 )
-shape_range = Vector2( 0, 4 )
+shape = SubResource( 6 )
 trigger = false
+_update_shape_index = 0
 
-[node name="Sprite2" type="Sprite" parent="."]
+[node name="GroundRed1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 80, 16 )
-texture = ExtResource( 1 )
-region = true
-region_rect = Rect2( 96, 96, 32, 32 )
+transform/pos = Vector2( 208, 16 )
+texture = ExtResource( 7 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed1"]
 
-transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 11 )
-shapes/0/transform = Matrix32( 2, 0, 0, 2, -32, -32 )
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -162,13 +213,68 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed1/StaticBody2D"]
 
-transform/pos = Vector2( -32, -32 )
-transform/scale = Vector2( 2, 2 )
-build_mode = 0
-polygon = Vector2Array( 32, 32, 12.5792, 31.9748, 13.6184, 28.0071, 15.1674, 22.6064, 31.9453, 5.42914 )
-shape_range = Vector2( 0, 0 )
+shape = SubResource( 7 )
 trigger = false
+_update_shape_index = 0
+
+[node name="GroundRed2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 16 )
+texture = ExtResource( 8 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed2"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed2/StaticBody2D"]
+
+shape = SubResource( 8 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite10" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite10"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite10/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
 
 

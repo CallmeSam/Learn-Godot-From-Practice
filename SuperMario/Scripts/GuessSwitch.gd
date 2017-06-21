@@ -9,4 +9,4 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
-		self.get_node("/root/GlobalSwitch").setScene("res://Scenes/FirstGUI.tscn")
+		self.get_node("/root/GlobalSwitch").setScene("res://Scenes/MarioHUD.tscn")
