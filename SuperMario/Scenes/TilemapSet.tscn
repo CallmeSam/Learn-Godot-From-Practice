@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
 [ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
@@ -48,6 +48,11 @@ extents = Vector2( 16, 16 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 48 )
 
 [node name="Tilemap" type="Node"]
 
@@ -243,11 +248,17 @@ shape = SubResource( 8 )
 trigger = false
 _update_shape_index = 0
 
-[node name="Sprite10" type="Sprite" parent="."]
+[node name="GroundRed2-3" type="Node2D" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite10"]
+editor/display_folded = true
+transform/pos = Vector2( 240, 80 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed2-3"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
+shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -255,12 +266,106 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite10/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed2-3/StaticBody2D"]
 
+transform/pos = Vector2( 0, 32 )
+shape = SubResource( 9 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Sprite10" type="Sprite" parent="GroundRed2-3"]
+
+texture = ExtResource( 8 )
+
+[node name="Sprite11" type="Sprite" parent="GroundRed2-3"]
+
+transform/pos = Vector2( 0, 32 )
+texture = ExtResource( 8 )
+
+[node name="Sprite12" type="Sprite" parent="GroundRed2-3"]
+
+transform/pos = Vector2( 0, 64 )
+texture = ExtResource( 8 )
+
+[node name="GroundBlue2-3" type="Node2D" parent="."]
+
+transform/pos = Vector2( 48, 80 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue2-3"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundBlue2-3/StaticBody2D"]
+
+transform/pos = Vector2( 0, 32 )
+shape = SubResource( 9 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite10" type="Sprite" parent="GroundBlue2-3"]
+
+texture = ExtResource( 2 )
+
+[node name="Sprite11" type="Sprite" parent="GroundBlue2-3"]
+
+transform/pos = Vector2( 0, 32 )
+texture = ExtResource( 2 )
+
+[node name="Sprite12" type="Sprite" parent="GroundBlue2-3"]
+
+transform/pos = Vector2( 0, 64 )
+texture = ExtResource( 2 )
+
+[node name="GroundGrey2-3" type="Node2D" parent="."]
+
+transform/pos = Vector2( 112, 80 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey2-3"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 32 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey2-3/StaticBody2D"]
+
+transform/pos = Vector2( 0, 32 )
+shape = SubResource( 9 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite10" type="Sprite" parent="GroundGrey2-3"]
+
+texture = ExtResource( 4 )
+
+[node name="Sprite13" type="Sprite" parent="GroundGrey2-3"]
+
+transform/pos = Vector2( 0, 32 )
+texture = ExtResource( 4 )
+
+[node name="Sprite14" type="Sprite" parent="GroundGrey2-3"]
+
+transform/pos = Vector2( 0, 64 )
+texture = ExtResource( 4 )
+
 [node name="copy" type="Sprite" parent="."]
+
+editor/display_folded = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="copy"]
 
@@ -273,6 +378,108 @@ friction = 1.0
 bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="copy/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy1" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy1"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy1/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy2" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy2"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy2/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy3" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy3"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy3/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy4" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy4"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy4/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy5" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy5"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy5/StaticBody2D"]
+
+trigger = false
+_update_shape_index = 0
+
+[node name="copy6" type="Sprite" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="copy6"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="copy6/StaticBody2D"]
 
 trigger = false
 _update_shape_index = 0
