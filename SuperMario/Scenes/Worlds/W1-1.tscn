@@ -1,9 +1,11 @@
-[gd_scene format=1]
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Asset/tilesets/mario.xml" type="TileSet" id=1]
 
 [node name="W1-1" type="TileMap"]
 
 mode = 0
-tile_set = null
+tile_set = ExtResource( 1 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
