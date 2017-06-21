@@ -1,10 +1,8 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://Scripts/FirstGUI.gd" type="Script" id=1]
 [ext_resource path="res://Asset/fonts/prstartk16.fnt" type="BitmapFont" id=2]
-[ext_resource path="res://Asset/images/tmp/background.png" type="Texture" id=3]
-[ext_resource path="res://Asset/images/gnd_red_1.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/CoinNum.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/CoinNum.tscn" type="PackedScene" id=3]
 
 [node name="MarioHUD" type="Node"]
 
@@ -78,29 +76,10 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="TextureFrame" type="TextureFrame" parent="."]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 157.0
-margin/top = 105.0
-margin/right = 669.0
-margin/bottom = 435.0
-texture = ExtResource( 3 )
-stretch_mode = 0
-
-[node name="Sprite" type="Sprite" parent="."]
-
-transform/pos = Vector2( 400, 64 )
-transform/scale = Vector2( 25, 1 )
-texture = ExtResource( 4 )
-
-[node name="CoinNum" parent="." instance=ExtResource( 5 )]
+[node name="CoinNum" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 271.96, 38.7312 )
-frame = 3
+frame = 0
 
 [node name="Timer" type="Timer" parent="."]
 

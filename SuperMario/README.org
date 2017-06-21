@@ -84,7 +84,21 @@
    - [X] Toad
    - [X] Aquatique
    - [X] Seasaw
-
+** World Map
+   - [-] World 1-1
+     - [X] tilemap
+     - [ ] block
+     - [ ] interactive pipe
+     - [ ] coin
+     - [ ] mushroom
+     - [ ] enemies
+   - [ ] World 2-1
+     - [ ] tilemap
+     - [ ] block
+     - [ ] interactive pipe
+     - [ ] coin
+     - [ ] mushroom
+     - [ ] enemies
 ** TODO Mario
 *** TODO Animation
 **** TODO Die

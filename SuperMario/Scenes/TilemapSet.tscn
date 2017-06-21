@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=1]
+[gd_scene load_steps=166 format=1]
 
 [ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
 [ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
@@ -148,86 +148,87 @@
 [ext_resource path="res://Asset/images/b_top1.png" type="Texture" id=146]
 [ext_resource path="res://Asset/images/b_top.png" type="Texture" id=147]
 [ext_resource path="res://Asset/images/b_bot.png" type="Texture" id=148]
+[ext_resource path="res://Asset/images/gnd_red2.png" type="Texture" id=149]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=10]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=11]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=12]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=13]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=14]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=15]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=16]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
-extents = Vector2( 2, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
-extents = Vector2( 2, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 8 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=8]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 31.9999, 32 )
 
 [sub_resource type="RectangleShape2D" id=9]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32.0001, 32 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.99994, 32 )
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 4, 32 )
+
+[sub_resource type="RectangleShape2D" id=13]
+
+custom_solver_bias = 0.0
+extents = Vector2( 31.9999, 32 )
+
+[sub_resource type="RectangleShape2D" id=14]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=15]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=16]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
 
 [node name="Tilemap" type="Node"]
 
@@ -239,6 +240,8 @@ texture = ExtResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue1"]
 
+transform/pos = Vector2( 4.76837e-07, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -264,6 +267,8 @@ texture = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundBlue2"]
 
+transform/pos = Vector2( -9.53674e-07, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
 shapes/0/shape = SubResource( 2 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -283,14 +288,15 @@ _update_shape_index = 0
 
 [node name="GroundGrey1" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 16 )
 texture = ExtResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey1"]
 
+transform/pos = Vector2( -3.8147e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 10 )
+shapes/0/shape = SubResource( 3 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -302,20 +308,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey1/StaticBody2D"]
 
-shape = SubResource( 10 )
+shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 0
 
 [node name="GroundGrey2" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 112, 16 )
 texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey2"]
 
+transform/pos = Vector2( -1.90735e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 11 )
+shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -327,20 +334,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey2/StaticBody2D"]
 
-shape = SubResource( 11 )
+shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 0
 
 [node name="GroundGrey3" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 144, 16 )
 texture = ExtResource( 5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundGrey3"]
 
+transform/pos = Vector2( 1.90735e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 5 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -352,20 +360,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGrey3/StaticBody2D"]
 
-shape = SubResource( 12 )
+shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 0
 
 [node name="GroundGreenBlue" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 176, 16 )
 texture = ExtResource( 6 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundGreenBlue"]
 
+transform/pos = Vector2( -3.8147e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 13 )
+shapes/0/shape = SubResource( 6 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -377,20 +386,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundGreenBlue/StaticBody2D"]
 
-shape = SubResource( 13 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 0
 
 [node name="GroundRed1" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 16 )
 texture = ExtResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundRed1"]
 
+transform/pos = Vector2( 7.62939e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -402,20 +412,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed1/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="GroundUnderWater" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 16 )
 texture = ExtResource( 8 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundUnderWater"]
 
+transform/pos = Vector2( -3.8147e-06, 4.76837e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -427,20 +438,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundUnderWater/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformWL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 64 )
 texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWL"]
 
+transform/pos = Vector2( 4.76837e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -452,20 +464,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformWL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformWC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 64 )
 texture = ExtResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWC"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -477,20 +490,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformWC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformWR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 64 )
 texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWR"]
 
+transform/pos = Vector2( -9.53674e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -502,20 +516,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformWR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformGL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 64 )
 texture = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGL"]
 
+transform/pos = Vector2( 9.53674e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -527,20 +542,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformGL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformGC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 64 )
 texture = ExtResource( 13 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGC"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -552,20 +568,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformGC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformGR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 192, 64 )
 texture = ExtResource( 14 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGR"]
 
+transform/pos = Vector2( -3.8147e-06, -9.53674e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -577,20 +594,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformGR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformYL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 64 )
 texture = ExtResource( 15 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYL"]
 
+transform/pos = Vector2( -3.8147e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -602,20 +620,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformYL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformYC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 272, 64 )
 texture = ExtResource( 16 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYC"]
 
+transform/pos = Vector2( -3.8147e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -627,20 +646,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformYC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="TformYR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 304, 64 )
 texture = ExtResource( 17 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYR"]
 
+transform/pos = Vector2( -3.8147e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -652,7 +672,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TformYR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
@@ -673,14 +693,15 @@ texture = ExtResource( 20 )
 
 [node name="PipeCDG-BC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 144 )
 texture = ExtResource( 21 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BC"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -692,20 +713,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 144 )
 texture = ExtResource( 22 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BL"]
 
+transform/pos = Vector2( 4.76837e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -717,20 +739,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 144 )
 texture = ExtResource( 23 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BR"]
 
+transform/pos = Vector2( 9.53674e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -742,20 +765,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 112 )
 texture = ExtResource( 24 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TL"]
 
+transform/pos = Vector2( 4.76837e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -767,20 +791,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDG-TC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 112 )
 texture = ExtResource( 25 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TC"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -792,20 +817,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 112 )
 texture = ExtResource( 26 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TR"]
 
+transform/pos = Vector2( -9.53674e-07, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -817,20 +843,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 144 )
 texture = ExtResource( 27 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BL"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -842,20 +869,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 144 )
 texture = ExtResource( 28 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BR"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -867,20 +895,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 112 )
 texture = ExtResource( 29 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TL"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -892,20 +921,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 112 )
 texture = ExtResource( 30 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TR"]
 
+transform/pos = Vector2( 1.90735e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -917,20 +947,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 224 )
 texture = ExtResource( 31 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BR"]
 
+transform/pos = Vector2( -9.53674e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -942,20 +973,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-BC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 224 )
 texture = ExtResource( 32 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BC"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -967,20 +999,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 224 )
 texture = ExtResource( 33 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BL"]
 
+transform/pos = Vector2( 4.76837e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -992,20 +1025,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 192 )
 texture = ExtResource( 34 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TL"]
 
+transform/pos = Vector2( 4.76837e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1017,20 +1051,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-TC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 192 )
 texture = ExtResource( 35 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TC"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1042,20 +1077,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCDW-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 192 )
 texture = ExtResource( 36 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TR"]
 
+transform/pos = Vector2( -9.53674e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1067,20 +1103,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCDW-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDW-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 224 )
 texture = ExtResource( 37 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BL"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1092,20 +1129,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDW-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 224 )
 texture = ExtResource( 38 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BR"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1117,20 +1155,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDW-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 192 )
 texture = ExtResource( 39 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TL"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1142,20 +1181,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeDW-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 192 )
 texture = ExtResource( 40 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TR"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1167,20 +1207,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeDW-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 272 )
 texture = ExtResource( 41 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TR"]
 
+transform/pos = Vector2( -4.76837e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1192,20 +1233,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 304 )
 texture = ExtResource( 42 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BR"]
 
+transform/pos = Vector2( -4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1217,20 +1259,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-BC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 304 )
 texture = ExtResource( 43 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BC"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1242,20 +1285,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 304 )
 texture = ExtResource( 44 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BL"]
 
+transform/pos = Vector2( 4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1267,20 +1311,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 272 )
 texture = ExtResource( 45 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TL"]
 
+transform/pos = Vector2( 4.76837e-07, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1292,20 +1337,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLG-TC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 272 )
 texture = ExtResource( 46 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TC"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1317,20 +1363,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLG-TC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 304 )
 texture = ExtResource( 47 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BL"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1342,20 +1389,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 304 )
 texture = ExtResource( 48 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BR"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1367,20 +1415,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 272 )
 texture = ExtResource( 49 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TL"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1392,20 +1441,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 272 )
 texture = ExtResource( 50 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TR"]
 
+transform/pos = Vector2( 1.90735e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1417,20 +1467,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 352 )
 texture = ExtResource( 51 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TR"]
 
+transform/pos = Vector2( 9.53674e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1442,20 +1493,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 80, 384 )
 texture = ExtResource( 52 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BR"]
 
+transform/pos = Vector2( -4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1467,20 +1519,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-BC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 384 )
 texture = ExtResource( 53 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BC"]
 
+transform/pos = Vector2( -4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1492,20 +1545,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 384 )
 texture = ExtResource( 54 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BL"]
 
+transform/pos = Vector2( -4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1517,20 +1571,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 16, 352 )
 texture = ExtResource( 55 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TL"]
 
+transform/pos = Vector2( 4.76837e-07, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1542,20 +1597,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCLWG-TC" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 48, 352 )
 texture = ExtResource( 56 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TC"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1567,20 +1623,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCLWG-TC/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLWG-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 384 )
 texture = ExtResource( 57 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BL"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1592,20 +1649,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLWG-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 384 )
 texture = ExtResource( 58 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BR"]
 
+transform/pos = Vector2( -1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1617,20 +1675,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLWG-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 128, 352 )
 texture = ExtResource( 59 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TL"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1642,20 +1701,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLWG-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 160, 352 )
 texture = ExtResource( 60 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TR"]
 
+transform/pos = Vector2( 1.90735e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1667,20 +1727,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLWG-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeR-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 384 )
 texture = ExtResource( 61 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BL"]
 
+transform/pos = Vector2( 7.62939e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1692,20 +1753,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeR-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 384 )
 texture = ExtResource( 62 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BR"]
 
+transform/pos = Vector2( -3.8147e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1717,20 +1779,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeR-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 352 )
 texture = ExtResource( 63 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TL"]
 
+transform/pos = Vector2( 7.62939e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1742,20 +1805,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeR-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 352 )
 texture = ExtResource( 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TR"]
 
+transform/pos = Vector2( -3.8147e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1767,20 +1831,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeR-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCy-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 304 )
 texture = ExtResource( 65 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BL"]
 
+transform/pos = Vector2( 7.62939e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1792,20 +1857,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCy-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 304 )
 texture = ExtResource( 66 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BR"]
 
+transform/pos = Vector2( -3.8147e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1817,20 +1883,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCy-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 272 )
 texture = ExtResource( 67 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TR"]
 
+transform/pos = Vector2( 3.8147e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1842,20 +1909,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeCy-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 272 )
 texture = ExtResource( 68 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TL"]
 
+transform/pos = Vector2( 7.62939e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1867,20 +1935,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeCy-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLW-BL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 224 )
 texture = ExtResource( 69 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BL"]
 
+transform/pos = Vector2( 7.62939e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1892,20 +1961,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-BL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLW-BR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 224 )
 texture = ExtResource( 70 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BR"]
 
+transform/pos = Vector2( -3.8147e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1917,20 +1987,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-BR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLW-TL" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 208, 192 )
 texture = ExtResource( 71 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TL"]
 
+transform/pos = Vector2( 7.62939e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1942,20 +2013,21 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-TL/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
 [node name="PipeLW-TR" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 240, 192 )
 texture = ExtResource( 72 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TR"]
 
+transform/pos = Vector2( -3.8147e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1967,7 +2039,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeLW-TR/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
@@ -2013,8 +2085,10 @@ texture = ExtResource( 80 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PlantUnderWater"]
 
+transform/pos = Vector2( 7.62939e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 14 )
+shapes/0/shape = SubResource( 8 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2026,7 +2100,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlantUnderWater/StaticBody2D"]
 
-shape = SubResource( 14 )
+shape = SubResource( 8 )
 trigger = false
 _update_shape_index = 0
 
@@ -2047,8 +2121,10 @@ texture = ExtResource( 83 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="WaterBU"]
 
+transform/pos = Vector2( 7.62939e-06, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 15 )
+shapes/0/shape = SubResource( 9 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2060,7 +2136,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WaterBU/StaticBody2D"]
 
-shape = SubResource( 15 )
+shape = SubResource( 9 )
 trigger = false
 _update_shape_index = 0
 
@@ -2081,14 +2157,15 @@ texture = ExtResource( 86 )
 
 [node name="WhiteBonus" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 720, 272 )
 texture = ExtResource( 87 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="WhiteBonus"]
 
+transform/pos = Vector2( -1.52588e-05, -3.8147e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 16 )
+shapes/0/shape = SubResource( 10 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2100,7 +2177,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WhiteBonus/StaticBody2D"]
 
-shape = SubResource( 16 )
+shape = SubResource( 10 )
 trigger = false
 _update_shape_index = 0
 
@@ -2253,6 +2330,7 @@ texture = ExtResource( 116 )
 
 transform/pos = Vector2( 480, 208 )
 texture = ExtResource( 117 )
+offset = Vector2( 0, 2 )
 
 [node name="BushTop" type="Sprite" parent="."]
 
@@ -2306,13 +2384,16 @@ texture = ExtResource( 127 )
 
 [node name="FlagPole1" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 448, 144 )
 texture = ExtResource( 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="FlagPole1"]
 
+transform/pos = Vector2( 4.19617e-05, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 11 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2324,7 +2405,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FlagPole1/StaticBody2D"]
 
-shape = SubResource( 4 )
+shape = SubResource( 11 )
 trigger = false
 _update_shape_index = 0
 
@@ -2336,8 +2417,10 @@ texture = ExtResource( 129 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="FlagPole2"]
 
+transform/pos = Vector2( -7.62939e-06, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 5 )
+shapes/0/shape = SubResource( 12 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2349,7 +2432,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FlagPole2/StaticBody2D"]
 
-shape = SubResource( 5 )
+shape = SubResource( 12 )
 trigger = false
 _update_shape_index = 0
 
@@ -2381,9 +2464,11 @@ texture = ExtResource( 134 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Bridge"]
 
+transform/pos = Vector2( 7.62939e-06, 7.62939e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, -8 )
+shapes/0/shape = SubResource( 13 )
+shapes/0/transform = Matrix32( 1, 0, 0, 0.528571, -0.138794, -15.3889 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -2394,8 +2479,9 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge/StaticBody2D"]
 
-transform/pos = Vector2( 0, -8 )
-shape = SubResource( 6 )
+transform/pos = Vector2( -0.138794, -15.3889 )
+transform/scale = Vector2( 1, 0.528571 )
+shape = SubResource( 13 )
 trigger = false
 _update_shape_index = 0
 
@@ -2407,8 +2493,10 @@ texture = ExtResource( 135 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Bridge1"]
 
+transform/pos = Vector2( 7.62939e-06, 6.67572e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 7 )
+shapes/0/shape = SubResource( 14 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2420,7 +2508,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge1/StaticBody2D"]
 
-shape = SubResource( 7 )
+shape = SubResource( 14 )
 trigger = false
 _update_shape_index = 0
 
@@ -2482,8 +2570,10 @@ texture = ExtResource( 146 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CannonB"]
 
+transform/pos = Vector2( -1.52588e-05, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 15 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2495,7 +2585,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CannonB/StaticBody2D"]
 
-shape = SubResource( 8 )
+shape = SubResource( 15 )
 trigger = false
 _update_shape_index = 0
 
@@ -2507,8 +2597,10 @@ texture = ExtResource( 147 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CannonT"]
 
+transform/pos = Vector2( 7.62939e-06, -9.53674e-07 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 16 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2520,7 +2612,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CannonT/StaticBody2D"]
 
-shape = SubResource( 9 )
+shape = SubResource( 16 )
 trigger = false
 _update_shape_index = 0
 
@@ -2532,8 +2624,10 @@ texture = ExtResource( 148 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CannonT1"]
 
+transform/pos = Vector2( -1.52588e-05, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 16 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2545,7 +2639,34 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CannonT1/StaticBody2D"]
 
-shape = SubResource( 9 )
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 0
+
+[node name="GroundRed2" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 672, 32 )
+texture = ExtResource( 149 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundRed2"]
+
+transform/pos = Vector2( -1.52588e-05, 1.90735e-06 )
+transform/scale = Vector2( 0.5, 0.5 )
+input/pickable = false
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRed2/StaticBody2D"]
+
+shape = SubResource( 16 )
 trigger = false
 _update_shape_index = 0
 
