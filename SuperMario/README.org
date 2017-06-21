@@ -36,9 +36,13 @@
     - [X] animation
     - [ ] script
     - [ ] collision, trajectory
-** Platform
-   - [ ] script
-** TileSet
+** Platforms
+   - [ ] Platform4
+     - [ ] animation
+     - [ ] script
+   - [ ] Platform6
+     - [ ] script
+** TODO TileSet
    - [X] Pipes
      - [X] Corner Pipe White Dark
      - [X] Corner Pipe Green Dark
@@ -51,11 +55,18 @@
      - [X] Pipe Green
      - [X] Pipe Red
      - [X] Pipe Cyan
-   - [ ] Tree
-     - [ ] White Tree
-     - [ ] Green Tree
-   - 
-
+   - [X] Tree
+     - [X] White Tree
+     - [X] Green Tree
+     - [X] Trunk
+   - [X] Plant Under Water
+   - [X] T Platform
+     - [X] Platform White
+     - [X] Platform Green
+     - [X] Platform YellowRed
+     - [X] Support Grey
+     - [X] Support Pink
+     - [X] Support Brun
 ** TODO Mario
 *** TODO Animation
 **** TODO Die

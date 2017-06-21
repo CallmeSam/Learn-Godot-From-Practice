@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=1]
+[gd_scene load_steps=88 format=1]
 
 [ext_resource path="res://Asset/images/gnd1.png" type="Texture" id=1]
 [ext_resource path="res://Asset/images/gnd1_2.png" type="Texture" id=2]
@@ -7,67 +7,79 @@
 [ext_resource path="res://Asset/images/gnd_4.png" type="Texture" id=5]
 [ext_resource path="res://Asset/images/gnd_5.png" type="Texture" id=6]
 [ext_resource path="res://Asset/images/gnd_red_1.png" type="Texture" id=7]
-[ext_resource path="res://Asset/images/t_left2.png" type="Texture" id=8]
-[ext_resource path="res://Asset/images/t_center2.png" type="Texture" id=9]
-[ext_resource path="res://Asset/images/t_right2.png" type="Texture" id=10]
-[ext_resource path="res://Asset/images/t_left.png" type="Texture" id=11]
-[ext_resource path="res://Asset/images/t_center.png" type="Texture" id=12]
-[ext_resource path="res://Asset/images/t_right.png" type="Texture" id=13]
-[ext_resource path="res://Asset/images/t_left1.png" type="Texture" id=14]
-[ext_resource path="res://Asset/images/t_center1.png" type="Texture" id=15]
-[ext_resource path="res://Asset/images/t_right1.png" type="Texture" id=16]
-[ext_resource path="res://Asset/images/pipe_hor_bot_center.png" type="Texture" id=17]
-[ext_resource path="res://Asset/images/pipe_hor_bot_left.png" type="Texture" id=18]
-[ext_resource path="res://Asset/images/pipe_hor_bot_right.png" type="Texture" id=19]
-[ext_resource path="res://Asset/images/pipe_hor_top_left.png" type="Texture" id=20]
-[ext_resource path="res://Asset/images/pipe_hor_top_center.png" type="Texture" id=21]
-[ext_resource path="res://Asset/images/pipe_hor_top_right.png" type="Texture" id=22]
-[ext_resource path="res://Asset/images/pipe_left_bot.png" type="Texture" id=23]
-[ext_resource path="res://Asset/images/pipe_right_bot.png" type="Texture" id=24]
-[ext_resource path="res://Asset/images/pipe_left_top.png" type="Texture" id=25]
-[ext_resource path="res://Asset/images/pipe_right_top.png" type="Texture" id=26]
-[ext_resource path="res://Asset/images/pipe3_hor_bot_right.png" type="Texture" id=27]
-[ext_resource path="res://Asset/images/pipe3_hor_bot_center.png" type="Texture" id=28]
-[ext_resource path="res://Asset/images/pipe3_hor_bot_left.png" type="Texture" id=29]
-[ext_resource path="res://Asset/images/pipe3_hor_top_left.png" type="Texture" id=30]
-[ext_resource path="res://Asset/images/pipe3_hor_top_center.png" type="Texture" id=31]
-[ext_resource path="res://Asset/images/pipe3_hor_top_right.png" type="Texture" id=32]
-[ext_resource path="res://Asset/images/pipe3_left_bot.png" type="Texture" id=33]
-[ext_resource path="res://Asset/images/pipe3_right_bot.png" type="Texture" id=34]
-[ext_resource path="res://Asset/images/pipe3_left_top.png" type="Texture" id=35]
-[ext_resource path="res://Asset/images/pipe3_right_top.png" type="Texture" id=36]
-[ext_resource path="res://Asset/images/pipe1_hor_top_right.png" type="Texture" id=37]
-[ext_resource path="res://Asset/images/pipe1_hor_bot_right.png" type="Texture" id=38]
-[ext_resource path="res://Asset/images/pipe1_hor_bot_center.png" type="Texture" id=39]
-[ext_resource path="res://Asset/images/pipe1_hor_bot_left.png" type="Texture" id=40]
-[ext_resource path="res://Asset/images/pipe1_hor_top_left.png" type="Texture" id=41]
-[ext_resource path="res://Asset/images/pipe1_hor_top_center.png" type="Texture" id=42]
-[ext_resource path="res://Asset/images/pipe1_left_bot.png" type="Texture" id=43]
-[ext_resource path="res://Asset/images/pipe1_right_bot.png" type="Texture" id=44]
-[ext_resource path="res://Asset/images/pipe1_left_top.png" type="Texture" id=45]
-[ext_resource path="res://Asset/images/pipe1_right_top.png" type="Texture" id=46]
-[ext_resource path="res://Asset/images/pipe2_hor_top_right.png" type="Texture" id=47]
-[ext_resource path="res://Asset/images/pipe2_hor_bot_right.png" type="Texture" id=48]
-[ext_resource path="res://Asset/images/pipe2_hor_bot_center.png" type="Texture" id=49]
-[ext_resource path="res://Asset/images/pipe2_hor_bot_left.png" type="Texture" id=50]
-[ext_resource path="res://Asset/images/pipe2_hor_top_left.png" type="Texture" id=51]
-[ext_resource path="res://Asset/images/pipe2_hor_top_center.png" type="Texture" id=52]
-[ext_resource path="res://Asset/images/pipe2_left_bot.png" type="Texture" id=53]
-[ext_resource path="res://Asset/images/pipe2_right_bot.png" type="Texture" id=54]
-[ext_resource path="res://Asset/images/pipe2_left_top.png" type="Texture" id=55]
-[ext_resource path="res://Asset/images/pipe2_right_top.png" type="Texture" id=56]
-[ext_resource path="res://Asset/images/pipe4_left_bot.png" type="Texture" id=57]
-[ext_resource path="res://Asset/images/pipe4_right_bot.png" type="Texture" id=58]
-[ext_resource path="res://Asset/images/pipe4_left_top.png" type="Texture" id=59]
-[ext_resource path="res://Asset/images/pipe4_right_top.png" type="Texture" id=60]
-[ext_resource path="res://Asset/images/pipe5_left_bot.png" type="Texture" id=61]
-[ext_resource path="res://Asset/images/pipe5_right_bot.png" type="Texture" id=62]
-[ext_resource path="res://Asset/images/pipe5_right_top.png" type="Texture" id=63]
-[ext_resource path="res://Asset/images/pipe5_left_top.png" type="Texture" id=64]
-[ext_resource path="res://Asset/images/pipe6_left_bot.png" type="Texture" id=65]
-[ext_resource path="res://Asset/images/pipe6_right_bot.png" type="Texture" id=66]
-[ext_resource path="res://Asset/images/pipe6_left_top.png" type="Texture" id=67]
-[ext_resource path="res://Asset/images/pipe6_right_top.png" type="Texture" id=68]
+[ext_resource path="res://Asset/images/uw_0.png" type="Texture" id=8]
+[ext_resource path="res://Asset/images/t_left2.png" type="Texture" id=9]
+[ext_resource path="res://Asset/images/t_center2.png" type="Texture" id=10]
+[ext_resource path="res://Asset/images/t_right2.png" type="Texture" id=11]
+[ext_resource path="res://Asset/images/t_left.png" type="Texture" id=12]
+[ext_resource path="res://Asset/images/t_center.png" type="Texture" id=13]
+[ext_resource path="res://Asset/images/t_right.png" type="Texture" id=14]
+[ext_resource path="res://Asset/images/t_left1.png" type="Texture" id=15]
+[ext_resource path="res://Asset/images/t_center1.png" type="Texture" id=16]
+[ext_resource path="res://Asset/images/t_right1.png" type="Texture" id=17]
+[ext_resource path="res://Asset/images/t_bot.png" type="Texture" id=18]
+[ext_resource path="res://Asset/images/t_bot0.png" type="Texture" id=19]
+[ext_resource path="res://Asset/images/t_bot2.png" type="Texture" id=20]
+[ext_resource path="res://Asset/images/pipe_hor_bot_center.png" type="Texture" id=21]
+[ext_resource path="res://Asset/images/pipe_hor_bot_left.png" type="Texture" id=22]
+[ext_resource path="res://Asset/images/pipe_hor_bot_right.png" type="Texture" id=23]
+[ext_resource path="res://Asset/images/pipe_hor_top_left.png" type="Texture" id=24]
+[ext_resource path="res://Asset/images/pipe_hor_top_center.png" type="Texture" id=25]
+[ext_resource path="res://Asset/images/pipe_hor_top_right.png" type="Texture" id=26]
+[ext_resource path="res://Asset/images/pipe_left_bot.png" type="Texture" id=27]
+[ext_resource path="res://Asset/images/pipe_right_bot.png" type="Texture" id=28]
+[ext_resource path="res://Asset/images/pipe_left_top.png" type="Texture" id=29]
+[ext_resource path="res://Asset/images/pipe_right_top.png" type="Texture" id=30]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_right.png" type="Texture" id=31]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_center.png" type="Texture" id=32]
+[ext_resource path="res://Asset/images/pipe3_hor_bot_left.png" type="Texture" id=33]
+[ext_resource path="res://Asset/images/pipe3_hor_top_left.png" type="Texture" id=34]
+[ext_resource path="res://Asset/images/pipe3_hor_top_center.png" type="Texture" id=35]
+[ext_resource path="res://Asset/images/pipe3_hor_top_right.png" type="Texture" id=36]
+[ext_resource path="res://Asset/images/pipe3_left_bot.png" type="Texture" id=37]
+[ext_resource path="res://Asset/images/pipe3_right_bot.png" type="Texture" id=38]
+[ext_resource path="res://Asset/images/pipe3_left_top.png" type="Texture" id=39]
+[ext_resource path="res://Asset/images/pipe3_right_top.png" type="Texture" id=40]
+[ext_resource path="res://Asset/images/pipe1_hor_top_right.png" type="Texture" id=41]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_right.png" type="Texture" id=42]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_center.png" type="Texture" id=43]
+[ext_resource path="res://Asset/images/pipe1_hor_bot_left.png" type="Texture" id=44]
+[ext_resource path="res://Asset/images/pipe1_hor_top_left.png" type="Texture" id=45]
+[ext_resource path="res://Asset/images/pipe1_hor_top_center.png" type="Texture" id=46]
+[ext_resource path="res://Asset/images/pipe1_left_bot.png" type="Texture" id=47]
+[ext_resource path="res://Asset/images/pipe1_right_bot.png" type="Texture" id=48]
+[ext_resource path="res://Asset/images/pipe1_left_top.png" type="Texture" id=49]
+[ext_resource path="res://Asset/images/pipe1_right_top.png" type="Texture" id=50]
+[ext_resource path="res://Asset/images/pipe2_hor_top_right.png" type="Texture" id=51]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_right.png" type="Texture" id=52]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_center.png" type="Texture" id=53]
+[ext_resource path="res://Asset/images/pipe2_hor_bot_left.png" type="Texture" id=54]
+[ext_resource path="res://Asset/images/pipe2_hor_top_left.png" type="Texture" id=55]
+[ext_resource path="res://Asset/images/pipe2_hor_top_center.png" type="Texture" id=56]
+[ext_resource path="res://Asset/images/pipe2_left_bot.png" type="Texture" id=57]
+[ext_resource path="res://Asset/images/pipe2_right_bot.png" type="Texture" id=58]
+[ext_resource path="res://Asset/images/pipe2_left_top.png" type="Texture" id=59]
+[ext_resource path="res://Asset/images/pipe2_right_top.png" type="Texture" id=60]
+[ext_resource path="res://Asset/images/pipe4_left_bot.png" type="Texture" id=61]
+[ext_resource path="res://Asset/images/pipe4_right_bot.png" type="Texture" id=62]
+[ext_resource path="res://Asset/images/pipe4_left_top.png" type="Texture" id=63]
+[ext_resource path="res://Asset/images/pipe4_right_top.png" type="Texture" id=64]
+[ext_resource path="res://Asset/images/pipe5_left_bot.png" type="Texture" id=65]
+[ext_resource path="res://Asset/images/pipe5_right_bot.png" type="Texture" id=66]
+[ext_resource path="res://Asset/images/pipe5_right_top.png" type="Texture" id=67]
+[ext_resource path="res://Asset/images/pipe5_left_top.png" type="Texture" id=68]
+[ext_resource path="res://Asset/images/pipe6_left_bot.png" type="Texture" id=69]
+[ext_resource path="res://Asset/images/pipe6_right_bot.png" type="Texture" id=70]
+[ext_resource path="res://Asset/images/pipe6_left_top.png" type="Texture" id=71]
+[ext_resource path="res://Asset/images/pipe6_right_top.png" type="Texture" id=72]
+[ext_resource path="res://Asset/images/tree_3.png" type="Texture" id=73]
+[ext_resource path="res://Asset/images/tree_2.png" type="Texture" id=74]
+[ext_resource path="res://Asset/images/tree_1.png" type="Texture" id=75]
+[ext_resource path="res://Asset/images/tree1_3.png" type="Texture" id=76]
+[ext_resource path="res://Asset/images/tree1_1.png" type="Texture" id=77]
+[ext_resource path="res://Asset/images/tree1_2.png" type="Texture" id=78]
+[ext_resource path="res://Asset/images/tree_0.png" type="Texture" id=79]
+[ext_resource path="res://Asset/images/uw_1.png" type="Texture" id=80]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -281,11 +293,36 @@ shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
+[node name="GroundUnderWater" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 240, 16 )
+texture = ExtResource( 8 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GroundUnderWater"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundUnderWater/StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
 [node name="TformWL" type="Sprite" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 64 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWL"]
 
@@ -310,7 +347,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 64 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWC"]
 
@@ -335,7 +372,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 64 )
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformWR"]
 
@@ -360,7 +397,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 64 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGL"]
 
@@ -385,7 +422,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 64 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGC"]
 
@@ -410,7 +447,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 192, 64 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformGR"]
 
@@ -435,7 +472,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 64 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYL"]
 
@@ -460,7 +497,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 272, 64 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYC"]
 
@@ -485,7 +522,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 304, 64 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TformYR"]
 
@@ -506,11 +543,26 @@ shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
 
+[node name="TformBot1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 352, 64 )
+texture = ExtResource( 18 )
+
+[node name="TformBot2 " type="Sprite" parent="."]
+
+transform/pos = Vector2( 384, 64 )
+texture = ExtResource( 19 )
+
+[node name="TformBot3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 416, 64 )
+texture = ExtResource( 20 )
+
 [node name="PipeCDG-BC" type="Sprite" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 144 )
-texture = ExtResource( 17 )
+texture = ExtResource( 21 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BC"]
 
@@ -535,7 +587,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 144 )
-texture = ExtResource( 18 )
+texture = ExtResource( 22 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BL"]
 
@@ -560,7 +612,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 144 )
-texture = ExtResource( 19 )
+texture = ExtResource( 23 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-BR"]
 
@@ -585,7 +637,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 112 )
-texture = ExtResource( 20 )
+texture = ExtResource( 24 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TL"]
 
@@ -610,7 +662,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 112 )
-texture = ExtResource( 21 )
+texture = ExtResource( 25 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TC"]
 
@@ -635,7 +687,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 112 )
-texture = ExtResource( 22 )
+texture = ExtResource( 26 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDG-TR"]
 
@@ -660,7 +712,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 144 )
-texture = ExtResource( 23 )
+texture = ExtResource( 27 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BL"]
 
@@ -685,7 +737,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 144 )
-texture = ExtResource( 24 )
+texture = ExtResource( 28 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-BR"]
 
@@ -710,7 +762,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 112 )
-texture = ExtResource( 25 )
+texture = ExtResource( 29 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TL"]
 
@@ -735,7 +787,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 112 )
-texture = ExtResource( 26 )
+texture = ExtResource( 30 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDG-TR"]
 
@@ -760,7 +812,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 224 )
-texture = ExtResource( 27 )
+texture = ExtResource( 31 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BR"]
 
@@ -785,7 +837,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 224 )
-texture = ExtResource( 28 )
+texture = ExtResource( 32 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BC"]
 
@@ -810,7 +862,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 224 )
-texture = ExtResource( 29 )
+texture = ExtResource( 33 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-BL"]
 
@@ -835,7 +887,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 192 )
-texture = ExtResource( 30 )
+texture = ExtResource( 34 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TL"]
 
@@ -860,7 +912,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 192 )
-texture = ExtResource( 31 )
+texture = ExtResource( 35 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TC"]
 
@@ -885,7 +937,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 192 )
-texture = ExtResource( 32 )
+texture = ExtResource( 36 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCDW-TR"]
 
@@ -910,7 +962,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 224 )
-texture = ExtResource( 33 )
+texture = ExtResource( 37 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BL"]
 
@@ -935,7 +987,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 224 )
-texture = ExtResource( 34 )
+texture = ExtResource( 38 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-BR"]
 
@@ -960,7 +1012,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 192 )
-texture = ExtResource( 35 )
+texture = ExtResource( 39 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TL"]
 
@@ -985,7 +1037,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 192 )
-texture = ExtResource( 36 )
+texture = ExtResource( 40 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeDW-TR"]
 
@@ -1010,7 +1062,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 272 )
-texture = ExtResource( 37 )
+texture = ExtResource( 41 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TR"]
 
@@ -1035,7 +1087,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 304 )
-texture = ExtResource( 38 )
+texture = ExtResource( 42 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BR"]
 
@@ -1060,7 +1112,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 304 )
-texture = ExtResource( 39 )
+texture = ExtResource( 43 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BC"]
 
@@ -1085,7 +1137,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 304 )
-texture = ExtResource( 40 )
+texture = ExtResource( 44 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-BL"]
 
@@ -1110,7 +1162,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 272 )
-texture = ExtResource( 41 )
+texture = ExtResource( 45 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TL"]
 
@@ -1135,7 +1187,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 272 )
-texture = ExtResource( 42 )
+texture = ExtResource( 46 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLG-TC"]
 
@@ -1160,7 +1212,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 304 )
-texture = ExtResource( 43 )
+texture = ExtResource( 47 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BL"]
 
@@ -1185,7 +1237,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 304 )
-texture = ExtResource( 44 )
+texture = ExtResource( 48 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-BR"]
 
@@ -1210,7 +1262,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 272 )
-texture = ExtResource( 45 )
+texture = ExtResource( 49 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TL"]
 
@@ -1235,7 +1287,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 272 )
-texture = ExtResource( 46 )
+texture = ExtResource( 50 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLG-TR"]
 
@@ -1260,7 +1312,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 352 )
-texture = ExtResource( 47 )
+texture = ExtResource( 51 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TR"]
 
@@ -1285,7 +1337,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 80, 384 )
-texture = ExtResource( 48 )
+texture = ExtResource( 52 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BR"]
 
@@ -1310,7 +1362,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 384 )
-texture = ExtResource( 49 )
+texture = ExtResource( 53 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BC"]
 
@@ -1335,7 +1387,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 384 )
-texture = ExtResource( 50 )
+texture = ExtResource( 54 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-BL"]
 
@@ -1360,7 +1412,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 16, 352 )
-texture = ExtResource( 51 )
+texture = ExtResource( 55 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TL"]
 
@@ -1385,7 +1437,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 48, 352 )
-texture = ExtResource( 52 )
+texture = ExtResource( 56 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCLWG-TC"]
 
@@ -1410,7 +1462,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 384 )
-texture = ExtResource( 53 )
+texture = ExtResource( 57 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BL"]
 
@@ -1435,7 +1487,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 384 )
-texture = ExtResource( 54 )
+texture = ExtResource( 58 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-BR"]
 
@@ -1460,7 +1512,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 128, 352 )
-texture = ExtResource( 55 )
+texture = ExtResource( 59 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TL"]
 
@@ -1485,7 +1537,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 160, 352 )
-texture = ExtResource( 56 )
+texture = ExtResource( 60 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLWG-TR"]
 
@@ -1510,7 +1562,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 384 )
-texture = ExtResource( 57 )
+texture = ExtResource( 61 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BL"]
 
@@ -1535,7 +1587,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 384 )
-texture = ExtResource( 58 )
+texture = ExtResource( 62 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-BR"]
 
@@ -1560,7 +1612,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 352 )
-texture = ExtResource( 59 )
+texture = ExtResource( 63 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TL"]
 
@@ -1585,7 +1637,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 352 )
-texture = ExtResource( 60 )
+texture = ExtResource( 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeR-TR"]
 
@@ -1610,7 +1662,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 304 )
-texture = ExtResource( 61 )
+texture = ExtResource( 65 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BL"]
 
@@ -1635,7 +1687,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 304 )
-texture = ExtResource( 62 )
+texture = ExtResource( 66 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-BR"]
 
@@ -1660,7 +1712,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 272 )
-texture = ExtResource( 63 )
+texture = ExtResource( 67 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TR"]
 
@@ -1685,7 +1737,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 272 )
-texture = ExtResource( 64 )
+texture = ExtResource( 68 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeCy-TL"]
 
@@ -1710,7 +1762,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 224 )
-texture = ExtResource( 65 )
+texture = ExtResource( 69 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BL"]
 
@@ -1735,7 +1787,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 224 )
-texture = ExtResource( 66 )
+texture = ExtResource( 70 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-BR"]
 
@@ -1760,7 +1812,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 208, 192 )
-texture = ExtResource( 67 )
+texture = ExtResource( 71 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TL"]
 
@@ -1785,7 +1837,7 @@ _update_shape_index = 0
 
 editor/display_folded = true
 transform/pos = Vector2( 240, 192 )
-texture = ExtResource( 68 )
+texture = ExtResource( 72 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="PipeLW-TR"]
 
@@ -1805,5 +1857,45 @@ bounce = 0.0
 shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
+
+[node name="TreeGT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 288, 192 )
+texture = ExtResource( 73 )
+
+[node name="TreeGD" type="Sprite" parent="."]
+
+transform/pos = Vector2( 288, 224 )
+texture = ExtResource( 74 )
+
+[node name="TreeG" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 208 )
+texture = ExtResource( 75 )
+
+[node name="TreeWT" type="Sprite" parent="."]
+
+transform/pos = Vector2( 352, 192 )
+texture = ExtResource( 76 )
+
+[node name="TreeW" type="Sprite" parent="."]
+
+transform/pos = Vector2( 384, 208 )
+texture = ExtResource( 77 )
+
+[node name="TreeWD" type="Sprite" parent="."]
+
+transform/pos = Vector2( 352, 224 )
+texture = ExtResource( 78 )
+
+[node name="Trunk" type="Sprite" parent="."]
+
+transform/pos = Vector2( 416, 208 )
+texture = ExtResource( 79 )
+
+[node name="PlantUnderWater" type="Sprite" parent="."]
+
+transform/pos = Vector2( 288, 272 )
+texture = ExtResource( 80 )
 
 
