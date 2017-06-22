@@ -10,23 +10,6 @@
    |----------------+--------------------------------+-------------+-------------+--------------------------------------------|
    | 1-Up Mushroom  | [[./Asset/gifs/1-upmushroom.png]]  | 0 points    | Rare        | Gives an extra life                        |
 
-#+BEGIN_LATEX
-\begin{table}[H]
-\caption{Перечень сокращений}
-\begin{center}
-\begin{tabular}{|m{6cm}|m{10cm}|}
-\hline
-\theadfst{Сокращения} & \thead{Расшифровка} \\ \hline
-АС     & Автоматизированная система\\ \hline
-АРМ    & Автоматизированное рабочее место предназначенное для аудитора информационной безопасности\\ \hline
-НСИ    & Нормативно-справочная информация\\ \hline
-ЦХД    & Централизованное хранилище данных\\ \hline
-ODS    & Оперативное хранилище данных на базе технологии Exadata и Golden Gate.\\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-#+END_LATEX
-
 ** Transformations
    | Mario Form      |                                       | Requirement                                                                | Description                                                           |
    |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
@@ -43,10 +26,24 @@ ODS    & Оперативное хранилище данных на базе т
    |                 | [[./Asset/gifs/SuperInvincibleMario.gif]] |                                                                            | - Immune toharm from any enemies or obstacles                         |
    |                 |                                       |                                                                            | - Can defeat most enemies without jumping on them                     |
    |                 |                                       |                                                                            | - Can still lose a life by failling into a pit or running out of time |
+
+** FireFlower
+   - [X] music
+   - [X] animation
+
 ** Fireball
    - [X] animation
-   - [ ] script
    - [ ] collision, trajectory
+
+** Star
+   - [ ] Trajectory adjustement
+   - [X] Animation
+   - [X] Sound
+
+** Mushrooms
+   - [X] Mushroom
+   - [X] 1-Up Mushroom
+   - [ ] Sound
 
 ** CheepBird(Red&Grey)
     - [X] animation
@@ -58,10 +55,6 @@ ODS    & Оперативное хранилище данных на базе т
     - [ ] script
     - [ ] collision, trajectory
 
-** Star
-    - [X] animation
-    - [ ] script
-    - [ ] collision, trajectory
 
 ** Squid
     - [X] animation
