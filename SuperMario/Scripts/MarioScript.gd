@@ -30,6 +30,8 @@ func _ready():
 
 
 func _fixed_process(delta):
+	#cameraNode.set_pos(Vector2(animationNode.get_pos().x, 0))
+
 	PLAYERSTATE_PREV = PLAYERSTATE
 	PLAYERSTATE = PLAYERSTATE_NEXT
 
@@ -40,7 +42,6 @@ func _fixed_process(delta):
 		groundState(delta)
 	elif PLAYERSTATE == "air":
 		airState(delta)
-	print(PLAYERSTATE)
 
 func groundState(delta):
 	if moveLeft.check() == 2:
