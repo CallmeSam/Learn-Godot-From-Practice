@@ -22,7 +22,7 @@
    | Fire Mario      | [[./Asset/gifs/FireMario.png]]            | Fire Flower                                                                | - Gains the ability to throw Fireballs to defeat enemies              |
    |                 |                                       |                                                                            | - Reverts back into Small form by touching an enemy or obstacle       |
    |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
-   | Invicible Mario | [[./Asset/gifs/SamllInvincibleMario.gif]] | Super Star                                                                 | - Becomes invincible for a sort period of time                        |
+   | Invicible Mario | [[./Asset/gifs/SmallInvincibleMario.gif]] | Super Star                                                                 | - Becomes invincible for a sort period of time                        |
    |                 | [[./Asset/gifs/SuperInvincibleMario.gif]] |                                                                            | - Immune toharm from any enemies or obstacles                         |
    |                 |                                       |                                                                            | - Can defeat most enemies without jumping on them                     |
    |                 |                                       |                                                                            | - Can still lose a life by failling into a pit or running out of time |
