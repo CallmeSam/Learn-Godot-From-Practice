@@ -12,7 +12,7 @@ func _ready():
 
 func _on_NewGame_pressed():
 	print("NewGame button pressed!!!")
-	
+
 
 func _on_Load_pressed():
 	print("Load button pressed!!!")
@@ -23,7 +23,7 @@ func _on_Quit_pressed():
 
 func _on_Settings_pressed():
 	print("Settings button pressed!!!")
-	
+
 
 func _on_Guess_pressed():
 	print("Guess button pressed!!!")

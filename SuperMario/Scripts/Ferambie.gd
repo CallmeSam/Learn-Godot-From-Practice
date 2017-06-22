@@ -13,6 +13,6 @@ func _ready():
 	# Initialization here
 	self.set_process(true)
 	self.play()
-	
+
 func _process(delta):
 	pass

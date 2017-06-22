@@ -6,12 +6,12 @@
 [ext_resource path="res://Asset/images/Mario/mario1_move2.png" type="Texture" id=4]
 [ext_resource path="res://Asset/images/gnd_4.png" type="Texture" id=5]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
 extents = Vector2( 16.0887, 32.1628 )
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=5]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
@@ -23,24 +23,24 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 99.3334, 15.4113 )
+extents = Vector2( 180.53, 15.4113 )
 
 [node name="Animation" type="Node"]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Mario" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 20.9558, -0.59874 )
+transform/pos = Vector2( 52.3485, 260.095 )
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 0
 mass = 1.0
-friction = 0.0
+friction = 0.2
 bounce = 0.0
-gravity_scale = 1.0
+gravity_scale = 5.0
 custom_integrator = false
 continuous_cd = 0
 contacts_reported = 0
@@ -52,26 +52,59 @@ velocity/angular = 0.0
 damp_override/linear = -1.0
 damp_override/angular = -1.0
 script/script = ExtResource( 1 )
+speedMax = 300
+jumpForce = 300.0
+acceleration = 8.0
+airAcceleration = 1.0
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mario"]
 
-frames = SubResource( 2 )
-animation = "default"
-frame = 1
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Camera2D" type="Camera2D" parent="Mario"]
+
+transform/pos = Vector2( -20.9558, 0.59874 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="RayCast2D" type="RayCast2D" parent="Mario"]
+
+enabled = true
+cast_to = Vector2( 0, 35 )
+layer_mask = 1
+type_mask = 15
+
+[node name="rotate" type="Node2D" parent="Mario"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Mario"]
+
+frames = SubResource( 5 )
+animation = "default"
+playing = true
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 316.321, 434.732 )
 input/pickable = false
 shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 3.12202, 0, 0, 1, -11.3761, 18.5609 )
+shapes/0/transform = Matrix32( 4.2593, 0, 0, 1, 433.556, 18.5609 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -82,16 +115,32 @@ bounce = 0.0
 
 [node name="Sprite" type="Sprite" parent="StaticBody2D"]
 
-transform/pos = Vector2( -18.5063, 18.5609 )
-transform/scale = Vector2( 18.9401, 1 )
+transform/pos = Vector2( 443.014, 18.5609 )
+transform/scale = Vector2( 47.7851, 1 )
 texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 
-transform/pos = Vector2( -11.3761, 18.5609 )
-transform/scale = Vector2( 3.12202, 1 )
+transform/pos = Vector2( 433.556, 18.5609 )
+transform/scale = Vector2( 4.2593, 1 )
 shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 0
+
+[node name="AnimationTreePlayer" type="AnimationTreePlayer" parent="."]
+
+playback/process_mode = 1
+base_path = NodePath("..")
+master_player = NodePath("")
+data = {
+"active": true,
+"connections": [  ],
+"master": NodePath(""),
+"nodes": [ {
+"id": "out",
+"pos": Vector2( 40, 40 ),
+"type": "output"
+} ]
+}
 
 

@@ -6,7 +6,7 @@ extends MenuButton
 
 func _ready():
 	set_process(true)
-	
+
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		self.get_node("/root/GlobalSwitch").setScene("res://Scenes/MarioHUD.tscn")
