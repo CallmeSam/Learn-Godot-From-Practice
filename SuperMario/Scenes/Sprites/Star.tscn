@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://Scripts/Star.gd" type="Script" id=1]
 [ext_resource path="res://Asset/images/star_0.png" type="Texture" id=2]
 [ext_resource path="res://Asset/images/star_1.png" type="Texture" id=3]
 [ext_resource path="res://Asset/images/star_2.png" type="Texture" id=4]
 [ext_resource path="res://Asset/images/star_3.png" type="Texture" id=5]
+[ext_resource path="res://Asset/sounds/starmusic.wav" type="Sample" id=6]
+[ext_resource path="res://Asset/sounds/starmusic-fast.wav" type="Sample" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -19,6 +21,21 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="SampleLibrary" id=3]
+
+samples/starmusic = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 6 )
+}
+samples/starmusic-fast = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 7 )
+}
 
 [node name="Star" type="RigidBody2D"]
 
@@ -50,6 +67,7 @@ speed = 50.0
 
 frames = SubResource( 2 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -74,6 +92,17 @@ _update_shape_index = 0
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
+
+[node name="SamplePlayer2D" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 3 )
+config/pitch_random = 0.0
 
 [connection signal="body_enter" from="." to="." method="_on_Star_body_enter"]
 

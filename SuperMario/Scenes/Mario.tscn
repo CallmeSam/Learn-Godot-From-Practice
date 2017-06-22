@@ -1,19 +1,19 @@
 [gd_scene load_steps=59 format=1]
 
 [ext_resource path="res://Scripts/MarioScript.gd" type="Script" id=1]
-[ext_resource path="res://Asset/images/Mario/mario1_move0.png" type="Texture" id=2]
-[ext_resource path="res://Asset/images/Mario/mario1_move1.png" type="Texture" id=3]
-[ext_resource path="res://Asset/images/Mario/mario1_move2.png" type="Texture" id=4]
-[ext_resource path="res://Asset/images/Mario/mario1_jump.png" type="Texture" id=5]
-[ext_resource path="res://Asset/images/Mario/mario_st.png" type="Texture" id=6]
-[ext_resource path="res://Asset/images/Mario/mario_move0.png" type="Texture" id=7]
-[ext_resource path="res://Asset/images/Mario/mario_move1.png" type="Texture" id=8]
-[ext_resource path="res://Asset/images/Mario/mario_move2.png" type="Texture" id=9]
-[ext_resource path="res://Asset/images/Mario/mario_death.png" type="Texture" id=10]
-[ext_resource path="res://Asset/images/Mario/mario.png" type="Texture" id=11]
-[ext_resource path="res://Asset/images/Mario/mario_lvlup.png" type="Texture" id=12]
-[ext_resource path="res://Asset/images/Mario/mario1.png" type="Texture" id=13]
-[ext_resource path="res://Asset/images/Mario/mario_jump.png" type="Texture" id=14]
+[ext_resource path="res://Asset/images/Mario/mario1.png" type="Texture" id=2]
+[ext_resource path="res://Asset/images/Mario/mario_death.png" type="Texture" id=3]
+[ext_resource path="res://Asset/images/Mario/mario.png" type="Texture" id=4]
+[ext_resource path="res://Asset/images/Mario/mario_lvlup.png" type="Texture" id=5]
+[ext_resource path="res://Asset/images/Mario/mario_jump.png" type="Texture" id=6]
+[ext_resource path="res://Asset/images/Mario/mario1_jump.png" type="Texture" id=7]
+[ext_resource path="res://Asset/images/Mario/mario1_move0.png" type="Texture" id=8]
+[ext_resource path="res://Asset/images/Mario/mario1_move1.png" type="Texture" id=9]
+[ext_resource path="res://Asset/images/Mario/mario1_move2.png" type="Texture" id=10]
+[ext_resource path="res://Asset/images/Mario/mario_move0.png" type="Texture" id=11]
+[ext_resource path="res://Asset/images/Mario/mario_move1.png" type="Texture" id=12]
+[ext_resource path="res://Asset/images/Mario/mario_move2.png" type="Texture" id=13]
+[ext_resource path="res://Asset/images/Mario/mario_st.png" type="Texture" id=14]
 [ext_resource path="res://Scenes/MarioCamera.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Asset/sounds/blockbreak.wav" type="Sample" id=16]
 [ext_resource path="res://Asset/sounds/blockhit.wav" type="Sample" id=17]
@@ -56,7 +56,7 @@
 [ext_resource path="res://Asset/sounds/underwater-fast.wav" type="Sample" id=54]
 [ext_resource path="res://Asset/sounds/vine.wav" type="Sample" id=55]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 12, 16 )
@@ -64,53 +64,53 @@ extents = Vector2( 12, 16 )
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "grand-move",
+"name": "grand-idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "grand-jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "tiny-stop",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "tiny-move",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "tiny-die",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "tiny-idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ) ],
 "loop": false,
 "name": "tiny-grandir",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "tiny-jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "grand-idle",
+"name": "grand-jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "grand-move",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "tiny-move",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "tiny-stop",
 "speed": 5.0
 } ]
 
-[sub_resource type="SampleLibrary" id=4]
+[sub_resource type="SampleLibrary" id=3]
 
 samples/blockbreak = {
 "db": 0.0,
@@ -357,7 +357,7 @@ samples/vine = {
 
 transform/pos = Vector2( 52.3485, 260.095 )
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, -0.348499, -0.0950012 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -399,7 +399,7 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 transform/pos = Vector2( -0.348499, -0.0950012 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -412,7 +412,7 @@ current = true
 [node name="SamplePlayer" type="SamplePlayer" parent="."]
 
 config/polyphony = 1
-config/samples = SubResource( 4 )
+config/samples = SubResource( 3 )
 default/volume_db = 0.0
 default/pitch_scale = 1.0
 default/pan = 0.0

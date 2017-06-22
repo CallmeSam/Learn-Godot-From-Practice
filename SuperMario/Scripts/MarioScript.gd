@@ -119,3 +119,11 @@ func fireUp():
 func starUp():
 	print("Star up ....")
 	soundNode.play("mushroomeat")
+
+func oneUp():
+	print("One up ....")
+	soundNode.play("oneup")
+
+func beingAttacked():
+	print("Being attacked ....")
+

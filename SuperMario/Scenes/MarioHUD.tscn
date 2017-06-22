@@ -94,7 +94,7 @@ autostart = false
 [node name="CoinNum" parent="CanvasLayer" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 271.96, 38.7312 )
-frame = 5
+frame = 3
 
 [connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_Timer_timeout"]
 

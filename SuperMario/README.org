@@ -43,7 +43,12 @@
 ** Mushrooms
    - [X] Mushroom
    - [X] 1-Up Mushroom
-   - [ ] Sound
+   - [X] Sound
+
+** Squid
+    - [ ] animation&movement
+    - [ ] collision
+    - [ ] trajectory
 
 ** CheepBird(Red&Grey)
     - [X] animation
@@ -55,11 +60,6 @@
     - [ ] script
     - [ ] collision, trajectory
 
-
-** Squid
-    - [X] animation
-    - [ ] script
-    - [ ] collision, trajectory
 
 ** PiranhaFlower Light/Dark
     - [X] animation
