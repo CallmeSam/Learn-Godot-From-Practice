@@ -1,4 +1,32 @@
 * SuperMario Working Progress
+** Items
+   | Coin           | [[./Asset/gifs/Coin.gif]]          | 200 points  | Very Common | Collecting 100 of them gives an extra life |
+   |----------------+--------------------------------+-------------+-------------+--------------------------------------------|
+   | Super Mushroom | [[./Asset/gifs/SuperMushroom.png]] | 1000 points | Uncommon    | Gives the Super form                       |
+   |----------------+--------------------------------+-------------+-------------+--------------------------------------------|
+   | Fire Flower    | [[./Asset/gifs/FireFlower.gif]]    | 1000 points | Uncommon    | Gives the ability to shoot fireballs       |
+   |----------------+--------------------------------+-------------+-------------+--------------------------------------------|
+   | Super Star     | [[./Asset/gifs/Starman.gif]]       | 1000 points | Rare        | Gives invicibility for a moment            |
+   |----------------+--------------------------------+-------------+-------------+--------------------------------------------|
+   | 1-Up Mushroom  | [[./Asset/gifs/1-upmushroom.png]]  | 0 points    | Rare        | Gives an extra life                        |
+
+** Transformations
+   | Mario Form      |                                       | Requirement                                                                | Description                                                           |
+   |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
+   | Small Mario     | [[./Asset/gifs/SamllMario.png]]           | Nature form(when touching an enemy or obstale while in Super or Fire form) | - Weakest form when a new game begins                                 |
+   |                 |                                       |                                                                            | - Can lose a life by touching an enemy or obstacle                    |
+   |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
+   | Super Mario     | [[./Asset/gifs/SuperMario.png]]           | Super Mushroom                                                             | - Gains the ability to break Brick Blocks                             |
+   |                 |                                       |                                                                            | - Reverts back into Samll form by touching an enemy or obstacle       |
+   |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
+   | Fire Mario      | [[./Asset/gifs/FireMario.png]]            | Fire Flower                                                                | - Gains the ability to throw Fireballs to defeat enemies              |
+   |                 |                                       |                                                                            | - Reverts back into Small form by touching an enemy or obstacle       |
+   |-----------------+---------------------------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------|
+   | Invicible Mario | [[./Asset/gifs/SamllInvincibleMario.gif]] | Super Star                                                                 | - Becomes invincible for a sort period of time                        |
+   |                 | [[./Asset/gifs/SuperInvincibleMario.gif]] |                                                                            | - Immune toharm from any enemies or obstacles                         |
+   |                 |                                       |                                                                            | - Can defeat most enemies without jumping on them                     |
+   |                 |                                       |                                                                            | - Can still lose a life by failling into a pit or running out of time |
+
 ** Fireball
    - [X] animation
    - [ ] script
@@ -99,9 +127,15 @@
      - [ ] coin
      - [ ] mushroom
      - [ ] enemies
-** TODO Mario
-*** TODO Animation
-**** TODO Die
+** Mario
+   - [ ] Refinement of movement
+   - [-] Animation
+     - [-] Tiny
+       - [X] Stop
+       - [X] Jump
+       - [X] Idle
+       - [ ] Grandir
+
 ** TODO Bowser
 ** TODO Cheep bird
 ** TODO Goombas

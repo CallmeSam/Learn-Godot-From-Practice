@@ -20,8 +20,11 @@ var ORIANTATION_PREV = ""
 var ORIANTATION = ""
 var ORIANTATION_NEXT = "right"
 
+var animationNode = null
+
 func _ready():
 	raycastNode = get_node("RayCast2D")
+	animationNode = get_node("AnimatedSprite")
 	raycastNode.add_exception(self)
 	set_fixed_process(true)
 
@@ -42,12 +45,18 @@ func _fixed_process(delta):
 func groundState(delta):
 	if moveLeft.check() == 2:
 		ORIANTATION_NEXT = "left"
+		animationNode.play("tiny-move")
 		move_x(get_linear_velocity(), -speedMax, acceleration, delta)
 	elif moveRight.check() == 2:
 		ORIANTATION_NEXT = "right"
+		animationNode.play("tiny-move")
 		move_x(get_linear_velocity(), speedMax, acceleration, delta)
 	else:
-		move_x(get_linear_velocity(), 0, acceleration/2, delta)
+		if abs(get_linear_velocity().x) >= 0.001:
+			animationNode.play("tiny-stop")
+		else:
+			animationNode.play("tiny-idle")
+		move_x(get_linear_velocity(), 0, acceleration, delta)
 
 	rotateBehavior()
 
@@ -58,6 +67,7 @@ func groundState(delta):
 		PLAYERSTATE_NEXT = "air"
 
 func airState(delta):
+	animationNode.play("tiny-jump")
 	if moveLeft.check() == 2:
 		ORIANTATION_NEXT = "left"
 		move_x(get_linear_velocity(), -speedMax, airAcceleration, delta)
