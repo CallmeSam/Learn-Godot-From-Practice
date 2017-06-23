@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 export var speedMax = 300
-export var jumpForce = 200.0
+export var jumpForce = 100.0
 export var acceleration = 3.0
 export var airAcceleration = 1.0
 
@@ -40,6 +40,10 @@ func _ready():
 
 
 func _fixed_process(delta):
+	pass
+
+func _integrate_forces(state):
+	var delta = state.get_step()
 	#cameraNode.set_pos(Vector2(animationNode.get_pos().x, 0))
 	print(coinCollected)
 

@@ -1,65 +1,71 @@
-[gd_scene load_steps=59 format=1]
+[gd_scene load_steps=60 format=1]
 
 [ext_resource path="res://Scripts/MarioScript.gd" type="Script" id=1]
 [ext_resource path="res://Asset/images/Mario/mario1.png" type="Texture" id=2]
-[ext_resource path="res://Asset/images/Mario/mario_death.png" type="Texture" id=3]
-[ext_resource path="res://Asset/images/Mario/mario.png" type="Texture" id=4]
-[ext_resource path="res://Asset/images/Mario/mario_lvlup.png" type="Texture" id=5]
-[ext_resource path="res://Asset/images/Mario/mario_jump.png" type="Texture" id=6]
-[ext_resource path="res://Asset/images/Mario/mario1_jump.png" type="Texture" id=7]
-[ext_resource path="res://Asset/images/Mario/mario1_move0.png" type="Texture" id=8]
-[ext_resource path="res://Asset/images/Mario/mario1_move1.png" type="Texture" id=9]
-[ext_resource path="res://Asset/images/Mario/mario1_move2.png" type="Texture" id=10]
-[ext_resource path="res://Asset/images/Mario/mario_move0.png" type="Texture" id=11]
-[ext_resource path="res://Asset/images/Mario/mario_move1.png" type="Texture" id=12]
-[ext_resource path="res://Asset/images/Mario/mario_move2.png" type="Texture" id=13]
-[ext_resource path="res://Asset/images/Mario/mario_st.png" type="Texture" id=14]
-[ext_resource path="res://Scenes/MarioCamera.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Asset/sounds/blockbreak.wav" type="Sample" id=16]
-[ext_resource path="res://Asset/sounds/blockhit.wav" type="Sample" id=17]
-[ext_resource path="res://Asset/sounds/boom.wav" type="Sample" id=18]
-[ext_resource path="res://Asset/sounds/bowserfall.wav" type="Sample" id=19]
-[ext_resource path="res://Asset/sounds/bridgebreak.wav" type="Sample" id=20]
-[ext_resource path="res://Asset/sounds/bulletbill.wav" type="Sample" id=21]
-[ext_resource path="res://Asset/sounds/castle.wav" type="Sample" id=22]
-[ext_resource path="res://Asset/sounds/castle-fast.wav" type="Sample" id=23]
-[ext_resource path="res://Asset/sounds/castleend.wav" type="Sample" id=24]
-[ext_resource path="res://Asset/sounds/coin.wav" type="Sample" id=25]
-[ext_resource path="res://Asset/sounds/death.wav" type="Sample" id=26]
-[ext_resource path="res://Asset/sounds/fire.wav" type="Sample" id=27]
-[ext_resource path="res://Asset/sounds/fireball.wav" type="Sample" id=28]
-[ext_resource path="res://Asset/sounds/gameover.wav" type="Sample" id=29]
-[ext_resource path="res://Asset/sounds/intermission.wav" type="Sample" id=30]
-[ext_resource path="res://Asset/sounds/jump.wav" type="Sample" id=31]
-[ext_resource path="res://Asset/sounds/jumpbig.wav" type="Sample" id=32]
-[ext_resource path="res://Asset/sounds/levelend.wav" type="Sample" id=33]
-[ext_resource path="res://Asset/sounds/lowtime.wav" type="Sample" id=34]
-[ext_resource path="res://Asset/sounds/mushroomappear.wav" type="Sample" id=35]
-[ext_resource path="res://Asset/sounds/mushroomeat.wav" type="Sample" id=36]
-[ext_resource path="res://Asset/sounds/oneup.wav" type="Sample" id=37]
-[ext_resource path="res://Asset/sounds/overworld.wav" type="Sample" id=38]
-[ext_resource path="res://Asset/sounds/overworld-fast.wav" type="Sample" id=39]
-[ext_resource path="res://Asset/sounds/pause.wav" type="Sample" id=40]
-[ext_resource path="res://Asset/sounds/pipe.wav" type="Sample" id=41]
-[ext_resource path="res://Asset/sounds/princessmusic.wav" type="Sample" id=42]
-[ext_resource path="res://Asset/sounds/rainboom.wav" type="Sample" id=43]
-[ext_resource path="res://Asset/sounds/scorering.wav" type="Sample" id=44]
-[ext_resource path="res://Asset/sounds/shot.wav" type="Sample" id=45]
-[ext_resource path="res://Asset/sounds/shrink.wav" type="Sample" id=46]
-[ext_resource path="res://Asset/sounds/starmusic.wav" type="Sample" id=47]
-[ext_resource path="res://Asset/sounds/starmusic-fast.wav" type="Sample" id=48]
-[ext_resource path="res://Asset/sounds/stomp.wav" type="Sample" id=49]
-[ext_resource path="res://Asset/sounds/swim.wav" type="Sample" id=50]
-[ext_resource path="res://Asset/sounds/underground.wav" type="Sample" id=51]
-[ext_resource path="res://Asset/sounds/underground-fast.wav" type="Sample" id=52]
-[ext_resource path="res://Asset/sounds/underwater.wav" type="Sample" id=53]
-[ext_resource path="res://Asset/sounds/underwater-fast.wav" type="Sample" id=54]
-[ext_resource path="res://Asset/sounds/vine.wav" type="Sample" id=55]
+[ext_resource path="res://Asset/images/Mario/mario.png" type="Texture" id=3]
+[ext_resource path="res://Asset/images/Mario/mario_death.png" type="Texture" id=4]
+[ext_resource path="res://Asset/images/Mario/mario1_jump.png" type="Texture" id=5]
+[ext_resource path="res://Asset/images/Mario/mario_st.png" type="Texture" id=6]
+[ext_resource path="res://Asset/images/Mario/mario_lvlup.png" type="Texture" id=7]
+[ext_resource path="res://Asset/images/Mario/mario_jump.png" type="Texture" id=8]
+[ext_resource path="res://Asset/images/Mario/mario1_move0.png" type="Texture" id=9]
+[ext_resource path="res://Asset/images/Mario/mario1_move1.png" type="Texture" id=10]
+[ext_resource path="res://Asset/images/Mario/mario1_move2.png" type="Texture" id=11]
+[ext_resource path="res://Asset/images/Mario/mario_move0.png" type="Texture" id=12]
+[ext_resource path="res://Asset/images/Mario/mario_move1.png" type="Texture" id=13]
+[ext_resource path="res://Asset/images/Mario/mario_move2.png" type="Texture" id=14]
+[ext_resource path="res://Asset/sounds/blockbreak.wav" type="Sample" id=15]
+[ext_resource path="res://Asset/sounds/blockhit.wav" type="Sample" id=16]
+[ext_resource path="res://Asset/sounds/boom.wav" type="Sample" id=17]
+[ext_resource path="res://Asset/sounds/bowserfall.wav" type="Sample" id=18]
+[ext_resource path="res://Asset/sounds/bridgebreak.wav" type="Sample" id=19]
+[ext_resource path="res://Asset/sounds/bulletbill.wav" type="Sample" id=20]
+[ext_resource path="res://Asset/sounds/castle.wav" type="Sample" id=21]
+[ext_resource path="res://Asset/sounds/castle-fast.wav" type="Sample" id=22]
+[ext_resource path="res://Asset/sounds/castleend.wav" type="Sample" id=23]
+[ext_resource path="res://Asset/sounds/coin.wav" type="Sample" id=24]
+[ext_resource path="res://Asset/sounds/death.wav" type="Sample" id=25]
+[ext_resource path="res://Asset/sounds/fire.wav" type="Sample" id=26]
+[ext_resource path="res://Asset/sounds/fireball.wav" type="Sample" id=27]
+[ext_resource path="res://Asset/sounds/gameover.wav" type="Sample" id=28]
+[ext_resource path="res://Asset/sounds/intermission.wav" type="Sample" id=29]
+[ext_resource path="res://Asset/sounds/jump.wav" type="Sample" id=30]
+[ext_resource path="res://Asset/sounds/jumpbig.wav" type="Sample" id=31]
+[ext_resource path="res://Asset/sounds/levelend.wav" type="Sample" id=32]
+[ext_resource path="res://Asset/sounds/lowtime.wav" type="Sample" id=33]
+[ext_resource path="res://Asset/sounds/mushroomappear.wav" type="Sample" id=34]
+[ext_resource path="res://Asset/sounds/mushroomeat.wav" type="Sample" id=35]
+[ext_resource path="res://Asset/sounds/oneup.wav" type="Sample" id=36]
+[ext_resource path="res://Asset/sounds/overworld.wav" type="Sample" id=37]
+[ext_resource path="res://Asset/sounds/overworld-fast.wav" type="Sample" id=38]
+[ext_resource path="res://Asset/sounds/pause.wav" type="Sample" id=39]
+[ext_resource path="res://Asset/sounds/pipe.wav" type="Sample" id=40]
+[ext_resource path="res://Asset/sounds/princessmusic.wav" type="Sample" id=41]
+[ext_resource path="res://Asset/sounds/rainboom.wav" type="Sample" id=42]
+[ext_resource path="res://Asset/sounds/scorering.wav" type="Sample" id=43]
+[ext_resource path="res://Asset/sounds/shot.wav" type="Sample" id=44]
+[ext_resource path="res://Asset/sounds/shrink.wav" type="Sample" id=45]
+[ext_resource path="res://Asset/sounds/starmusic.wav" type="Sample" id=46]
+[ext_resource path="res://Asset/sounds/starmusic-fast.wav" type="Sample" id=47]
+[ext_resource path="res://Asset/sounds/stomp.wav" type="Sample" id=48]
+[ext_resource path="res://Asset/sounds/swim.wav" type="Sample" id=49]
+[ext_resource path="res://Asset/sounds/underground.wav" type="Sample" id=50]
+[ext_resource path="res://Asset/sounds/underground-fast.wav" type="Sample" id=51]
+[ext_resource path="res://Asset/sounds/underwater.wav" type="Sample" id=52]
+[ext_resource path="res://Asset/sounds/underwater-fast.wav" type="Sample" id=53]
+[ext_resource path="res://Asset/sounds/vine.wav" type="Sample" id=54]
+[ext_resource path="res://Scenes/MarioCamera.tscn" type="PackedScene" id=55]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RayShape2D" id=4]
 
 custom_solver_bias = 0.0
-extents = Vector2( 12, 16 )
+length = 12.0
+
+[sub_resource type="CapsuleShape2D" id=5]
+
+custom_solver_bias = 0.0
+radius = 11.0
+height = 10.19
 
 [sub_resource type="SpriteFrames" id=2]
 
@@ -71,43 +77,43 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "tiny-die",
+"name": "tiny-idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "tiny-idle",
+"name": "tiny-die",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ) ],
-"loop": false,
-"name": "tiny-grandir",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "tiny-jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "grand-jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "tiny-stop",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "tiny-grandir",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "tiny-jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "grand-move",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "tiny-move",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "tiny-stop",
-"speed": 5.0
 } ]
 
 [sub_resource type="SampleLibrary" id=3]
@@ -116,257 +122,260 @@ samples/blockbreak = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 16 )
+"sample": ExtResource( 15 )
 }
 samples/blockhit = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 17 )
+"sample": ExtResource( 16 )
 }
 samples/boom = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 18 )
+"sample": ExtResource( 17 )
 }
 samples/bowserfall = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 19 )
+"sample": ExtResource( 18 )
 }
 samples/bridgebreak = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 20 )
+"sample": ExtResource( 19 )
 }
 samples/bulletbill = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 21 )
+"sample": ExtResource( 20 )
 }
 samples/castle = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 22 )
+"sample": ExtResource( 21 )
 }
 samples/castle-fast = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 23 )
+"sample": ExtResource( 22 )
 }
 samples/castleend = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 24 )
+"sample": ExtResource( 23 )
 }
 samples/coin = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 25 )
+"sample": ExtResource( 24 )
 }
 samples/death = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 26 )
+"sample": ExtResource( 25 )
 }
 samples/fire = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 27 )
+"sample": ExtResource( 26 )
 }
 samples/fireball = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 28 )
+"sample": ExtResource( 27 )
 }
 samples/gameover = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 29 )
+"sample": ExtResource( 28 )
 }
 samples/intermission = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 30 )
+"sample": ExtResource( 29 )
 }
 samples/jump = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 31 )
+"sample": ExtResource( 30 )
 }
 samples/jumpbig = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 32 )
+"sample": ExtResource( 31 )
 }
 samples/levelend = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 33 )
+"sample": ExtResource( 32 )
 }
 samples/lowtime = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 34 )
+"sample": ExtResource( 33 )
 }
 samples/mushroomappear = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 35 )
+"sample": ExtResource( 34 )
 }
 samples/mushroomeat = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 36 )
+"sample": ExtResource( 35 )
 }
 samples/oneup = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 37 )
+"sample": ExtResource( 36 )
 }
 samples/overworld = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 38 )
+"sample": ExtResource( 37 )
 }
 samples/overworld-fast = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 39 )
+"sample": ExtResource( 38 )
 }
 samples/pause = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 40 )
+"sample": ExtResource( 39 )
 }
 samples/pipe = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 41 )
+"sample": ExtResource( 40 )
 }
 samples/princessmusic = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 42 )
+"sample": ExtResource( 41 )
 }
 samples/rainboom = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 43 )
+"sample": ExtResource( 42 )
 }
 samples/scorering = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 44 )
+"sample": ExtResource( 43 )
 }
 samples/shot = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 45 )
+"sample": ExtResource( 44 )
 }
 samples/shrink = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 46 )
+"sample": ExtResource( 45 )
 }
 samples/starmusic = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 47 )
+"sample": ExtResource( 46 )
 }
 samples/starmusic-fast = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 48 )
+"sample": ExtResource( 47 )
 }
 samples/stomp = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 49 )
+"sample": ExtResource( 48 )
 }
 samples/swim = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 50 )
+"sample": ExtResource( 49 )
 }
 samples/underground = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 51 )
+"sample": ExtResource( 50 )
 }
 samples/underground-fast = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 52 )
+"sample": ExtResource( 51 )
 }
 samples/underwater = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 53 )
+"sample": ExtResource( 52 )
 }
 samples/underwater-fast = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 54 )
+"sample": ExtResource( 53 )
 }
 samples/vine = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 55 )
+"sample": ExtResource( 54 )
 }
 
 [node name="Mario" type="RigidBody2D"]
 
 transform/pos = Vector2( 52.3485, 260.095 )
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, -0.348499, -0.0950012 )
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.51454, -0.348499, -7.09625 )
 shapes/0/trigger = false
+shapes/1/shape = SubResource( 5 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, -0.348499, -1.095 )
+shapes/1/trigger = false
 collision/layers = 1
 collision/mask = 1
-mode = 0
-mass = 1.0
-friction = 0.2
+mode = 2
+mass = 3.0
+friction = 0.0
 bounce = 0.0
-gravity_scale = 5.0
+gravity_scale = 2.0
 custom_integrator = false
 continuous_cd = 0
 contacts_reported = 0
@@ -383,31 +392,11 @@ jumpForce = 300.0
 acceleration = 8.0
 airAcceleration = 1.0
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-
-enabled = true
-cast_to = Vector2( 0, 35 )
-layer_mask = 1
-type_mask = 15
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 
 frames = SubResource( 2 )
 animation = "tiny-idle"
 playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-
-transform/pos = Vector2( -0.348499, -0.0950012 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
-
-[node name="MarioCamera" parent="." instance=ExtResource( 15 )]
-
-editor/display_folded = true
-offset = Vector2( 368, 0 )
-current = true
 
 [node name="SamplePlayer" type="SamplePlayer" parent="."]
 
@@ -425,5 +414,36 @@ default/filter/gain = 1.0
 default/reverb_room = 2
 default/reverb_send = 0.0
 default/chorus_send = 0.0
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+transform/pos = Vector2( -0.348499, -0.0950012 )
+transform/scale = Vector2( 0.375, 0.5 )
+enabled = true
+cast_to = Vector2( 0, 35 )
+layer_mask = 1
+type_mask = 15
+
+[node name="MarioCamera" parent="." instance=ExtResource( 55 )]
+
+offset = Vector2( 0, -112 )
+current = true
+limit/left = 0
+limit/top = 0
+
+[node name="RayShape" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.348499, -7.09625 )
+transform/scale = Vector2( 1, 1.51454 )
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.348499, -1.095 )
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 1
 
 

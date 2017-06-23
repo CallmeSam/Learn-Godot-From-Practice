@@ -1,17 +1,12 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://Scenes/Mario.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Asset/images/gnd_4.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/CoinAn.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Sprites/Mushroom.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Sprites/FireFlower.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Sprites/Star.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Sprites/Squid.tscn" type="PackedScene" id=7]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 180.53, 15.4113 )
+[ext_resource path="res://Scenes/CoinAn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Sprites/Mushroom.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Sprites/FireFlower.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Sprites/Star.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Sprites/Squid.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Asset/tilesets/mario.xml" type="TileSet" id=7]
 
 [node name="SceneTesting" type="Node"]
 
@@ -19,74 +14,66 @@ extents = Vector2( 180.53, 15.4113 )
 
 transform/pos = Vector2( 40, 260 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="CoinAn" parent="." instance=ExtResource( 2 )]
 
-editor/display_folded = true
-transform/pos = Vector2( 316.321, 434.732 )
-input/pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 7.44247, 0, 0, 1, 1017.76, 18.5609 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 90.5795, 379.315 )
 
-[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+[node name="CoinAn3" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1021.07, 18.5609 )
-transform/scale = Vector2( 83.9133, 1 )
-texture = ExtResource( 2 )
+transform/pos = Vector2( 434.513, 333.287 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CoinAn4" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1017.76, 18.5609 )
-transform/scale = Vector2( 7.44247, 1 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 500, 343.215 )
 
-[node name="CoinAn" parent="." instance=ExtResource( 3 )]
+[node name="CoinAn5" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 170, 410 )
+transform/pos = Vector2( 570, 378.412 )
 
-[node name="CoinAn3" parent="." instance=ExtResource( 3 )]
+[node name="CoinAn1" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 430, 410 )
+transform/pos = Vector2( 254.513, 386.607 )
 
-[node name="CoinAn4" parent="." instance=ExtResource( 3 )]
+[node name="CoinAn2" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 500, 410 )
+transform/pos = Vector2( 344.513, 366.607 )
 
-[node name="CoinAn5" parent="." instance=ExtResource( 3 )]
+[node name="Mushroom" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 570, 410 )
+transform/pos = Vector2( 648.123, 346.752 )
 
-[node name="CoinAn1" parent="." instance=ExtResource( 3 )]
+[node name="FireFlower" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 250, 420 )
+transform/pos = Vector2( 373.682, 333.215 )
 
-[node name="CoinAn2" parent="." instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 340, 400 )
-
-[node name="Mushroom" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 640, 400 )
-
-[node name="FireFlower" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 380, 400 )
-
-[node name="Star" parent="." instance=ExtResource( 6 )]
+[node name="Star" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 150, 350 )
 speed = 200.0
 
-[node name="Squid" parent="." instance=ExtResource( 7 )]
+[node name="Squid" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 220, 400 )
+
+[node name="TileMap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 7 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 851968, 0, 851969, 0, 851970, 0, 851971, 0, 851972, 0, 851973, 0, 851974, 0, 851975, 0, 851976, 0, 851977, 0, 851978, 0, 851979, 0, 851980, 0, 851981, 0, 851982, 0, 851983, 0, 851984, 0, 851985, 0, 851986, 0, 851987, 0, 851988, 0, 851989, 0, 851990, 0, 851991, 0, 851992, 0, 851993, 0, 851994, 0, 851995, 0, 851996, 0, 851997, 0, 851998, 0, 851999, 0, 852000, 0, 852001, 0, 852002, 0, 852003, 0, 852004, 0, 852005, 0, 852006, 0, 852007, 0, 852008, 0, 852009, 0, 852010, 0, 852011, 0, 852012, 0, 852013, 0, 852014, 0, 852015, 0, 852016, 0, 852017, 0, 852018, 0, 852019, 0, 852020, 0, 852021, 0, 852022, 0, 852023, 0, 852024, 0, 852025, 0, 852026, 0, 852027, 0, 852028, 0, 852029, 0, 852030, 0, 852031, 0, 852032, 0, 852033, 0, 852034, 0, 1638444, 149 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 
